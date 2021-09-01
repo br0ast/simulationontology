@@ -1,21 +1,11 @@
 # Title: I have no fantasy
 
 Comment: Do we want to have two separate papers for the "Framenet of Symbols" and the ontology that will be used to describe it? (How deeply do I have to describe the infrastructure of simulations that could be generated using the ontology).
-
 One thing is to publish an ontology with examples.
-
 Capacity to answer questions and a good coverage for the domain.
-
 Nel knowledge graph la risorsa deve essere comprehensive.
-
 The vertical analysis on the knowledge graphs.
-
 Generative art xxx.
-
-
-
-
-
 One thing is to publish the resource...
 
 
@@ -25,7 +15,7 @@ INTRODUCTION ON SYMBOLS ...
 
 Compared to the highly debated topic of what symbols are and what can be considered a symbol or not, there is less discussion about the relationship that links the symbol to what it symbolizes.
 
-<mark>The general introduction is very similar to the aiucd paper. There, for space reasons, I had to cut a lot</mark>
+<mark>The general introduction is very similar to the aiucd paper. There, for space reasons, I had to cut a lot, maybe I can look at it again</mark>
 
  --> introduce Baudrillard
 BAUDRILLARD SIMULATION and SIMULACRA... <- In a transversal way

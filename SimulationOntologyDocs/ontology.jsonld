@@ -1,0 +1,415 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Author: Bruno Sartini"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o-20130430"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov-o",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart" : [ {
+    "@id" : "http://www.w3.org/ns/prov#EmptyCollection"
+  } ]
+} ]

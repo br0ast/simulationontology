@@ -1,0 +1,102 @@
+@prefix ex: <https://example.org/> .
+@prefix sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+
+### Simulations
+
+ex:ashTree-odin a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:odin ;
+    sim:hasContext ex:norse .
+
+ex:ashTree-connection a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:connection ;
+    sim:hasContext ex:celtic .
+
+ex:ashTree-surrender a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:surrender ;
+    sim:hasContext ex:celtic .
+
+ex:olive-fertility a sim:Simulation;
+    sim:hasSimulacrum ex:olive ;
+    sim:hasRealityCounterpart ex:fertility ;
+    sim:hasContext ex:generalOrUnknown .
+
+ex:rose-love a sim:Simulation;
+    sim:hasSimulacrum ex:rose ;
+    sim:hasRealityCounterpart ex:love ;
+    sim:hasContext ex:flowerLanguage .
+
+ex:rose-beauty a sim:Simulation;
+    sim:hasSimulacrum ex:rose ;
+    sim:hasRealityCounterpart ex:beauty ;
+    sim:hasContext ex:flowerLanguage .
+
+
+ex:odin-violence a sim:Simulation;
+    sim:hasSimulacrum ex:odin ;
+    sim:hasRealityCounterpart ex:violence ;
+    sim:hasContext ex:norse .
+
+ex:gazelle-beauty a sim:Simulation;
+    sim:hasSimulacrum ex:gazelle ;
+    sim:hasRealityCounterpart ex:beauty;
+    sim:hasContext ex:generalOrUnknown .
+
+### Simulacra
+
+ex:rose a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:rose-beauty , ex:rose-love .
+
+ex:ashTree a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:ashTree-odin , ex:ashTree-connection ,
+                           ex:ashTree-surrender .
+
+ex:olive a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:olive-fertility .
+
+ex:gazelle a sim:Simulacrum;
+        sim:isSimulacrumOf ex:gazelle-beauty .
+
+### Simulacra and Reality Counterparts
+
+ex:odin a sim:Simulacrum, sim:RealityCounterpart ;
+        sim:isSimulacrumOf ex:odin-violence ;
+        sim:isRealityCounterpartOf ex:ashTree-odin .
+
+### Reality Counterparts only
+
+ex:connection a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:ashTree-connection .
+
+ex:surrender a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:ashTree-surrender .
+
+ex:beauty a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:rose-beauty , ex:gazelle-beauty .
+
+ex:love a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:rose-love .
+
+ex:fertility a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:olive-fertility .
+
+ex:violence a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:odin-violence .
+
+
+### Contexts
+
+ex:norse a sim:Context ;
+        sim:isContextOf ex:ashTree-odin , ex:odin-violence .
+
+ex:celtic a sim:Context ;
+        sim:isContextOf ex:ashTree-connection, ex:ashTree-surrender .
+
+ex:generalOrUnknown a sim:Context ;
+        sim:isContextOf ex:olive-fertility , ex:gazelle-beauty .
+
+ex:flowerLanguage a sim:Context ;
+        sim:isContextOf ex:rose-love , ex:rose-beauty .
+

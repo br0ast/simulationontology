@@ -1,0 +1,110 @@
+@prefix ex: <https://example.org/> .
+@prefix sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+
+### Sources
+
+ex:dictionaryOfSymbols1 a sim:Source ;
+    sim:isSourceOf ex:acorn-plague, ex:agate-charm-healthyBlood,
+                   ex:aloe-charm-longevity .
+
+ex:dictionaryOfSymbols2 a sim:Source ;
+    sim:isSourceOf ex:acaciaThorns-neith, ex:bird-theGods . 
+
+ex:literarySource1 a sim:Source ;
+    sim:isSourceOf ex:amberStone-jaundice, ex:ashLeavesInWine-poison .
+
+### Simulations
+
+ex:acorn-plague a sim:ProtectionSimulation ;
+                sim:hasSimulacrum ex:acorn ;
+                sim:preventedRealityCounterpart ex:plague ;
+                sim:hasContext ex:generalOrUnknown ;
+                sim:hasSource ex:dictionaryOfSymbols1 .
+
+ex:agate-charm-healthyBlood a sim:Simulation ;
+                sim:hasSimulacrum ex:agate ;
+                sim:hasRealityCounterpart ex:charm ;
+                sim:elicitedRealityCounterpart ex:healthyBlood ;
+                sim:hasContext ex:arabian ;
+                sim:hasSource ex:dictionaryOfSymbols1 .
+
+ex:aloe-charm-longevity a sim:Simulation ;
+                sim:hasSimulacrum ex:aloe ;
+                sim:hasRealityCounterpart ex:charm ;
+                sim:elicitedRealityCounterpart ex:longevity ;
+                sim:hasContext ex:egyptian ;
+                sim:hasSource ex:dictionaryOfSymbols1 .
+
+ex:amberStone-jaundice a sim:HealingSimulation ;
+                sim:hasSimulacrum ex:amberStone ;
+                sim:healedRealityCounterpart ex:jaundice ;
+                sim:hasContext ex:islamic ;
+                sim:hasSource ex:literarySource1 .
+
+ex:ashLeavesInWine-poison a sim:HealingSimulation ;
+                sim:hasSimulacrum ex:ashLeavesInWine ;
+                sim:healedRealityCounterpart ex:poison ;
+                sim:hasContext ex:grecoRoman ;
+                sim:hasSource ex:literarySource1 .
+
+ex:acaciaThorns-neith a sim:EmblematicSimulation ;
+                sim:hasSimulacrum ex:acaciaThorns ;
+                sim:hasRealityCounterpart ex:neith ;
+                sim:hasContext ex:egyptian ;
+                sim:hasSource ex:dictionaryOfSymbols2 .
+
+ex:bird-theGods a sim:ManifestationSimulation ;
+                sim:hasSimulacrum ex:bird ;
+                sim:hasRealityCounterpart ex:theGods ;
+                sim:hasContext ex:hindu ;
+                sim:hasSource ex:dictionaryOfSymbols2 .
+
+### Simulacra
+
+ex:bird a sim:Simulacrum;
+        sim:isSimulacrumOf ex:bird-theGods .
+
+ex:acaciaThorns a sim:Simulacrum;
+        sim:isSimulacrumOf ex:acaciaThorns-neith .
+
+ex:ashLeavesInWine a sim:Simulacrum;
+        sim:isSimulacrumOf ex:ashLeavesInWine-poison .
+
+ex:amberStone a sim:Simulacrum;
+        sim:isSimulacrumOf ex:amberStone-jaundice .
+
+ex:aloe a sim:Simulacrum;
+        sim:isSimulacrumOf ex:aloe-charm-longevity .
+
+ex:agate a sim:Simulacrum;
+        sim:isSimulacrumOf ex:agate-charm-healthyBlood .
+
+ex:acorn a sim:Simulacrum;
+        sim:isSimulacrumOf ex:acorn-plague .
+
+### Reality Counterparts
+
+ex:plague a sim:RealityCounterpart;
+        sim:isPreventedRealityCounterpartOf ex:acorn-plague .
+
+ex:healthyBlood a sim:RealityCounterpart;
+        sim:isElicitedRealityCounterpartOf ex:agate-charm-healthyBlood .
+
+ex:charm a sim:RealityCounterpart;
+        sim:isRealityCounterpartOf ex:agate-charm-healthyBlood,
+                                   ex:aloe-charm-longevity .
+
+ex:longevity a sim:RealityCounterpart;
+        sim:isElicitedRealityCounterpartOf ex:aloe-charm-longevity .
+
+ex:jaundice a sim:RealityCounterpart;
+        sim:isHealedRealityCounterpartOf ex:amberStone-jaundice .
+
+ex:poison a sim:RealityCounterpart;
+        sim:isHealedRealityCounterpartOf ex:ashLeavesInWine-poison .
+
+ex:neith a sim:RealityCounterpart;
+        sim:isRealityCounterpartOf ex:acaciaThorns-neith .
+
+ex:theGods a sim:RealityCounterpart;
+        sim:isRealityCounterpartOf ex:bird-theGods .

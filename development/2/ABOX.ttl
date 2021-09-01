@@ -1,0 +1,152 @@
+@prefix ex: <https://example.org/> .
+@prefix sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+
+### Sources
+
+ex:dictionaryOfSymbols1 a sim:Source ;
+    sim:isSourceOf ex:ashTree-odin , ex:ashTree-connection ,
+                   ex:ashTree-surrender , ex:olive-immortality .
+
+ex:dictionaryOfSymbols2 a sim:Source ;
+    sim:isSourceOf ex:olive-fertility, ex:rose-love,
+                   ex:rose-beauty, ex:damaskRose-freshness .
+
+ex:literarysource1 a sim:Source ;
+    sim:isSourceOf ex:man-fire , ex:giant-manBeforeTheFall .
+
+### Simulations
+
+ex:ashTree-odin a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:odin ;
+    sim:hasSource ex:dictionaryOfSymbols1 ;
+    sim:hasContext ex:norse .
+
+ex:ashTree-connection a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:connection ;
+    sim:hasSource ex:dictionaryOfSymbols1 ;
+    sim:hasContext ex:celtic .
+
+ex:ashTree-surrender a sim:Simulation ;
+    sim:hasSimulacrum ex:ashTree ;
+    sim:hasRealityCounterpart ex:surrender ;
+    sim:hasSource ex:dictionaryOfSymbols1 ;
+    sim:hasContext ex:celtic .
+
+ex:olive-immortality a sim:Simulation;
+    sim:hasSimulacrum ex:olive ;
+    sim:hasRealityCounterpart ex:immortality ;
+    sim:hasSource ex:dictionaryOfSymbols1 ;
+    sim:hasContext ex:generalOrUnknown .
+
+ex:olive-fertility a sim:Simulation;
+    sim:hasSimulacrum ex:olive ;
+    sim:hasRealityCounterpart ex:fertility ;
+    sim:hasSource ex:dictionaryOfSymbols2 ;
+    sim:hasContext ex:generalOrUnknown .
+
+ex:rose-love a sim:Simulation;
+    sim:hasSimulacrum ex:rose ;
+    sim:hasRealityCounterpart ex:love ;
+    sim:hasSource ex:dictionaryOfSymbols2 ;
+    sim:hasContext ex:flowerLanguage .
+
+ex:rose-beauty a sim:Simulation;
+    sim:hasSimulacrum ex:rose ;
+    sim:hasRealityCounterpart ex:beauty ;
+    sim:hasSource ex:dictionaryOfSymbols2 ;
+    sim:hasContext ex:flowerLanguage .
+
+ex:damaskRose-freshness a sim:Simulation;
+    sim:hasSimulacrum ex:damaskRose ;
+    sim:hasRealityCounterpart ex:freshness ;
+    sim:hasSource ex:dictionaryOfSymbols2 ;
+    sim:hasContext ex:flowerLanguage .
+
+ex:giant-manBeforeTheFall a sim:Simulation;
+    sim:hasSimulacrum ex:giant ;
+    sim:hasRealityCounterpart ex:manBeforeTheFall ;
+    sim:hasSource ex:literarySource1 ;
+    sim:hasContext ex:generalOrUnknown .
+
+ex:man-fire a sim:Simulation;
+    sim:hasSimulacrum ex:man ;
+    sim:hasRealityCounterpart ex:fire ;
+    sim:hasSource ex:literarySource1 ;
+    sim:hasContext ex:generalOrUnknown .
+
+### Simulacra
+
+ex:rose a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:rose-beauty , ex:rose-love ;
+        sim:hasVariant ex:damaskRose .
+
+ex:damaskRose a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:damaskRose-freshness ;
+        sim:isVariantOf ex:rose .
+
+ex:ashTree a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:ashTree-odin , ex:ashTree-connection ,
+                           ex:ashTree-surrender .
+
+ex:olive a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:olive-fertility , ex:olive-immortality .
+
+ex:man a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:man-fire ;
+        sim:hasVariant ex:manBeforeTheFall .
+
+ex:giant a sim:Simulacrum ;
+        sim:isSimulacrumOf ex:giant-manBeforeTheFall .
+
+### Reality Counterparts
+
+ex:odin a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:ashTree-odin .
+
+ex:connection a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:ashTree-connection .
+
+ex:surrender a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:ashTree-surrender .
+
+ex:beauty a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:rose-beauty .
+
+ex:love a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:rose-love .
+
+ex:fertility a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:olive-fertility .
+
+ex:immortality a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:olive-immortality .
+
+ex:freshness a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:damaskRose-freshness .
+
+ex:fire a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:man-fire .
+
+ex:manBeforeTheFall a sim:RealityCounterpart ;
+        sim:isRealityCounterpartOf ex:giant-manBeforeTheFall ;
+        sim:isVariantOf ex:man .
+
+
+### Contexts
+
+ex:norse a sim:Context ;
+        sim:isContextOf ex:ashTree-odin .
+
+ex:celtic a sim:Context ;
+        sim:isContextOf ex:ashTree-connection, ex:ashTree-surrender .
+
+ex:generalOrUnknown a sim:Context ;
+        sim:isContextOf ex:olive-fertility , ex:olive-immortality ,
+                        ex:man-fire , ex:giant-manBeforeTheFall .
+
+ex:flowerLanguage a sim:Context ;
+        sim:isContextOf ex:rose-love , ex:rose-beauty ,
+                        ex:damaskRose-freshness .
+

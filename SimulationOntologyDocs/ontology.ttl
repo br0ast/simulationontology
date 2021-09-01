@@ -1,0 +1,275 @@
+@prefix : <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> .
+
+<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> rdf:type owl:Ontology ;
+                                                                         owl:imports <http://www.w3.org/ns/prov-o-20130430> ;
+                                                                         rdfs:comment "Author: Bruno Sartini" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart
+:easedRealityCounterpart rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :hasRealityCounterpart .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart
+:elicitedRealityCounterpart rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasRealityCounterpart .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext
+:hasContext rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isContextOf ;
+            rdfs:domain :Simulation ;
+            rdfs:range :Context .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant
+:hasPersonifiedVariant rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasVariant .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart
+:hasRealityCounterpart rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isRealityCounterpartOf ;
+                       rdfs:domain :Simulation ;
+                       rdfs:range :RealityCounterpart .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum
+:hasSimulacrum rdf:type owl:ObjectProperty ;
+               rdfs:domain :Simulation ;
+               rdfs:range :Simulacrum .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+           owl:inverseOf :isSourceOf ;
+           rdfs:domain :Simulation ;
+           rdfs:range :Source .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship
+:hasSymbolicRelationship rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :isSymbolicRelationshipOf ;
+                         rdfs:domain :Simulation ;
+                         rdfs:range :SymbolicRelationship .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant
+:hasVariant rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :RealityCounterpart
+                                        :Simulacrum
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :RealityCounterpart
+                                       :Simulacrum
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart
+:healedRealityCounterpart rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasRealityCounterpart .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf
+:isContextOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Context ;
+             rdfs:range :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf
+:isEasedRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :isRealityCounterpartOf .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf
+:isElicitedRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :isRealityCounterpartOf .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf
+:isHealedRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :isRealityCounterpartOf .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf
+:isPreventedRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :isRealityCounterpartOf .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf
+:isRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                        rdfs:domain :RealityCounterpart ;
+                        rdfs:range :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf
+:isRestoredRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf :isRealityCounterpartOf .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf
+:isSimulacrumOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Simulacrum ;
+                rdfs:range :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf
+:isSourceOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf [ owl:inverseOf <http://www.w3.org/ns/prov#wasDerivedFrom>
+                               ] ;
+            rdfs:domain :Source ;
+            rdfs:range :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf
+:isSymbolicRelationshipOf rdf:type owl:ObjectProperty ;
+                          rdfs:domain :SymbolicRelationship ;
+                          rdfs:range :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf
+:isVariantOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Simulacrum ;
+             rdfs:range :Simulacrum .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart
+:preventedRealityCounterpart rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasRealityCounterpart .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart
+:restoredRealityCounterpart rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasRealityCounterpart .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation
+:AssociationSimulation rdf:type owl:Class ;
+                       rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation
+:AttributeSimulation rdf:type owl:Class ;
+                     rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context
+:Context rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :isContextOf ;
+                           owl:someValuesFrom :Simulation
+                         ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation
+:CorrespondenceSimulation rdf:type owl:Class ;
+                          rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation
+:EmblematicSimulation rdf:type owl:Class ;
+                      rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation
+:HealingSimulation rdf:type owl:Class ;
+                   rdfs:subClassOf :Simulation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :healedRealityCounterpart ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :RealityCounterpart
+                                   ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation
+:ManifestationSimulation rdf:type owl:Class ;
+                         rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation
+:ProtectionSimulation rdf:type owl:Class ;
+                      rdfs:subClassOf :Simulation ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :preventedRealityCounterpart ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass :RealityCounterpart
+                                      ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart
+:RealityCounterpart rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :isRealityCounterpartOf ;
+                                      owl:someValuesFrom :Simulation
+                                    ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation
+:RelatednessSimulation rdf:type owl:Class ;
+                       rdfs:subClassOf :Simulation .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum
+:Simulacrum rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :isSimulacrumOf ;
+                              owl:someValuesFrom :Simulation
+                            ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation
+:Simulation rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasRealityCounterpart ;
+                              owl:someValuesFrom :RealityCounterpart
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSource ;
+                              owl:someValuesFrom :Source
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasSimulacrum ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Simulacrum
+                            ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :isSourceOf ;
+                          owl:someValuesFrom :Simulation
+                        ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship
+:SymbolicRelationship rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/ns/prov-o
+<http://www.w3.org/ns/prov-o> rdf:type owl:NamedIndividual ;
+                              :elicitedRealityCounterpart <http://www.w3.org/ns/prov#EmptyCollection> .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
