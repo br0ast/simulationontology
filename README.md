@@ -19,4 +19,4 @@ For every iteration, these documents are available:
 * A jupyter file in which it is possible to query the ABOX and test the competency questions.
 * A graphic representation of the ontology up to that iteration.
 
-Finally, the ontology is available [here](SimulationOntologyDocs\index-en.html)
+Finally, the ontology is available [here](https://github.com/br0ast/simulationontology/blob/main/Ontology/simulationontology.owl)
