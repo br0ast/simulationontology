@@ -7,10 +7,8 @@
      xmlns:sim="https://www.w3id.org/simulation/ontology/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://www.w3id.org/simulation/ontology/">
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <dc:contributor>Aldo Gangemi</dc:contributor>
         <dc:contributor>Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
@@ -54,6 +52,12 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
     <!-- https://www.w3id.org/simulation/ontology/easedRealityCounterpart -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/easedRealityCounterpart">
@@ -94,6 +98,22 @@
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/hasPersonifiedVariant">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasVariant"/>
         <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">This property is used when a variant is intended as the personified variant of the other entity. Like &quot;Air&quot; has personified variant &quot;Air personified&quot;</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Has personified variant</rdfs:label>
@@ -117,6 +137,7 @@
     <!-- https://www.w3id.org/simulation/ontology/hasSimulacrum -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/hasSimulacrum">
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isSimulacrumOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
@@ -144,6 +165,7 @@
     <!-- https://www.w3id.org/simulation/ontology/hasVariant -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/hasVariant">
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isVariantOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -194,6 +216,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:comment xml:lang="en">Inverse property of eased reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is eased reality counterpart of</rdfs:label>
@@ -205,6 +229,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:comment xml:lang="en">Inverse property of elicited reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is elicited reality counterpart of</rdfs:label>
@@ -216,6 +242,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/HealingSimulation"/>
         <rdfs:comment xml:lang="en">Inverse property of healed reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is healed reality counterpart of</rdfs:label>
@@ -227,6 +255,22 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isVariantOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse property of has personified variant</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is personified variant of</rdfs:label>
@@ -238,6 +282,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
         <rdfs:comment xml:lang="en">Inversed property of prevented reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is prevented reality counterpart of</rdfs:label>
@@ -261,6 +307,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
         <rdfs:comment xml:lang="en">Inverse property of restored reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is restored reality counterpart of</rdfs:label>
@@ -334,6 +382,8 @@
     <!-- https://www.w3id.org/simulation/ontology/symbolicMeaning -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/symbolicMeaning">
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/isSimulacrumOf"/>
             <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
@@ -397,6 +447,8 @@
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <owl:disjointWith rdf:resource="https://www.w3id.org/simulation/ontology/Source"/>
         <rdfs:comment xml:lang="en">The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Context</rdfs:label>
@@ -552,6 +604,7 @@
                 <owl:onClass rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.w3id.org/simulation/ontology/Source"/>
         <owl:hasKey rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
             <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/hasSimulacrum"/>
@@ -587,14 +640,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.w3.org/ns/prov-o -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov-o">
-        <elicitedRealityCounterpart rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-    </rdf:Description>
     
 
 

@@ -8,7 +8,6 @@
 @base <https://www.w3id.org/simulation/ontology/> .
 
 <https://www.w3id.org/simulation/ontology/> rdf:type owl:Ontology ;
-                                             owl:imports <http://www.w3.org/ns/prov-o-20130430> ;
                                              <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi" ,
                                                                                            "Marieke van Erp" ;
                                              <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" ;
@@ -30,6 +29,10 @@
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty .
+
 
 ###  https://www.w3id.org/simulation/ontology/easedRealityCounterpart
 sim:easedRealityCounterpart rdf:type owl:ObjectProperty ;
@@ -61,6 +64,16 @@ sim:hasContext rdf:type owl:ObjectProperty ;
 sim:hasPersonifiedVariant rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf sim:hasVariant ;
                           owl:inverseOf sim:isPersonifiedVariantOf ;
+                          rdfs:domain [ rdf:type owl:Class ;
+                                        owl:unionOf ( sim:RealityCounterpart
+                                                      sim:Simulacrum
+                                                    )
+                                      ] ;
+                          rdfs:range [ rdf:type owl:Class ;
+                                       owl:unionOf ( sim:RealityCounterpart
+                                                     sim:Simulacrum
+                                                   )
+                                     ] ;
                           rdfs:comment "This property is used when a variant is intended as the personified variant of the other entity. Like \"Air\" has personified variant \"Air personified\""@en ;
                           rdfs:isDefinedBy sim:SimulationOntology ;
                           rdfs:label "Has personified variant"@en .
@@ -77,8 +90,9 @@ sim:hasRealityCounterpart rdf:type owl:ObjectProperty ;
 
 
 ###  https://www.w3id.org/simulation/ontology/hasSimulacrum
-sim:hasSimulacrum rdf:type owl:ObjectProperty ,
-                           owl:FunctionalProperty ;
+sim:hasSimulacrum rdf:type owl:ObjectProperty ;
+                  owl:inverseOf sim:isSimulacrumOf ;
+                  rdf:type owl:FunctionalProperty ;
                   rdfs:domain sim:Simulation ;
                   rdfs:range sim:Simulacrum ;
                   rdfs:comment "This property links a simulation to its simulacrum."@en ;
@@ -99,6 +113,7 @@ sim:hasSource rdf:type owl:ObjectProperty ;
 
 ###  https://www.w3id.org/simulation/ontology/hasVariant
 sim:hasVariant rdf:type owl:ObjectProperty ;
+               owl:inverseOf sim:isVariantOf ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( sim:RealityCounterpart
                                            sim:Simulacrum
@@ -134,6 +149,8 @@ sim:isContextOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf
 sim:isEasedRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                rdfs:domain sim:RealityCounterpart ;
+                                rdfs:range sim:Simulation ;
                                 rdfs:comment "Inverse property of eased reality counterpart"@en ;
                                 rdfs:isDefinedBy sim:SimulationOntology ;
                                 rdfs:label "Is eased reality counterpart of"@en .
@@ -142,6 +159,8 @@ sim:isEasedRealityCounterpartOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf
 sim:isElicitedRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                   rdfs:domain sim:RealityCounterpart ;
+                                   rdfs:range sim:Simulation ;
                                    rdfs:comment "Inverse property of elicited reality counterpart"@en ;
                                    rdfs:isDefinedBy sim:SimulationOntology ;
                                    rdfs:label "Is elicited reality counterpart of"@en .
@@ -150,6 +169,8 @@ sim:isElicitedRealityCounterpartOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf
 sim:isHealedRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                 rdfs:domain sim:RealityCounterpart ;
+                                 rdfs:range sim:HealingSimulation ;
                                  rdfs:comment "Inverse property of healed reality counterpart"@en ;
                                  rdfs:isDefinedBy sim:SimulationOntology ;
                                  rdfs:label "Is healed reality counterpart of"@en .
@@ -158,6 +179,16 @@ sim:isHealedRealityCounterpartOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf
 sim:isPersonifiedVariantOf rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf sim:isVariantOf ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( sim:RealityCounterpart
+                                                       sim:Simulacrum
+                                                     )
+                                       ] ;
+                           rdfs:range [ rdf:type owl:Class ;
+                                        owl:unionOf ( sim:RealityCounterpart
+                                                      sim:Simulacrum
+                                                    )
+                                      ] ;
                            rdfs:comment "Inverse property of has personified variant"@en ;
                            rdfs:isDefinedBy sim:SimulationOntology ;
                            rdfs:label "Is personified variant of"@en .
@@ -166,6 +197,8 @@ sim:isPersonifiedVariantOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf
 sim:isPreventedRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                    rdfs:domain sim:RealityCounterpart ;
+                                    rdfs:range sim:ProtectionSimulation ;
                                     rdfs:comment "Inversed property of prevented reality counterpart"@en ;
                                     rdfs:isDefinedBy sim:SimulationOntology ;
                                     rdfs:label "Is prevented reality counterpart of"@en .
@@ -183,6 +216,8 @@ sim:isRealityCounterpartOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf
 sim:isRestoredRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                   rdfs:domain sim:RealityCounterpart ;
+                                   rdfs:range sim:ProtectionSimulation ;
                                    rdfs:comment "Inverse property of restored reality counterpart"@en ;
                                    rdfs:isDefinedBy sim:SimulationOntology ;
                                    rdfs:label "Is restored reality counterpart of"@en .
@@ -235,6 +270,8 @@ sim:restoredRealityCounterpart rdf:type owl:ObjectProperty ;
 
 ###  https://www.w3id.org/simulation/ontology/symbolicMeaning
 sim:symbolicMeaning rdf:type owl:ObjectProperty ;
+                    rdfs:domain sim:Simulacrum ;
+                    rdfs:range sim:RealityCounterpart ;
                     owl:propertyChainAxiom ( sim:isSimulacrumOf
                                              sim:hasRealityCounterpart
                                            ) ;
@@ -276,6 +313,8 @@ sim:Context rdf:type owl:Class ;
                               owl:onProperty sim:isContextOf ;
                               owl:someValuesFrom sim:Simulation
                             ] ;
+            owl:disjointWith sim:Simulation ,
+                             sim:Source ;
             rdfs:comment "The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection."@en ;
             rdfs:isDefinedBy sim:SimulationOntology ;
             rdfs:label "Context"@en .
@@ -386,6 +425,7 @@ sim:Simulation rdf:type owl:Class ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass sim:Simulacrum
                                ] ;
+               owl:disjointWith sim:Source ;
                owl:hasKey ( sim:hasRealityCounterpart
                             sim:hasSimulacrum
                           ) ;
@@ -408,10 +448,6 @@ sim:Source rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
-
-###  http://www.w3.org/ns/prov-o
-<http://www.w3.org/ns/prov-o> sim:elicitedRealityCounterpart <http://www.w3.org/ns/prov#EmptyCollection> .
-
 
 ###  https://www.w3id.org/simulation/ontology/SimulationOntology
 sim:SimulationOntology rdf:type owl:NamedIndividual .
