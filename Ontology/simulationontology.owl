@@ -11,6 +11,7 @@
                                              <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi" ,
                                                                                            "Marieke van Erp" ;
                                              <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Simulation Ontology"@en ;
                                              rdfs:comment "This ontology was designed to conceptualize symbolic meanings following Baudrillard's Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class."@en ;
                                              rdfs:label "Simulation Ontology"@en .
 
@@ -26,17 +27,34 @@
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/1999/xhtml/vocab#license
+<https://www.w3.org/1999/xhtml/vocab#license> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  http://www.w3.org/ns/prov#wasDerivedFrom
-<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty .
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:label "was derived from" .
 
 
 ###  https://www.w3id.org/simulation/ontology/easedRealityCounterpart
 sim:easedRealityCounterpart rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                            rdfs:domain sim:Simulation ;
+                            rdfs:range sim:RealityCounterpart ;
                             rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth."@en ;
                             rdfs:isDefinedBy sim:SimulationOntology ;
                             rdfs:label "Eased reality counterpart"@en .
@@ -45,6 +63,8 @@ sim:easedRealityCounterpart rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart
 sim:elicitedRealityCounterpart rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                               rdfs:domain sim:Simulation ;
+                               rdfs:range sim:RealityCounterpart ;
                                rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum."@en ;
                                rdfs:isDefinedBy sim:SimulationOntology ;
                                rdfs:label "Elicited reality counterpart"@en .
@@ -132,6 +152,8 @@ sim:hasVariant rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/healedRealityCounterpart
 sim:healedRealityCounterpart rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                             rdfs:domain sim:HealingSimulation ;
+                             rdfs:range sim:RealityCounterpart ;
                              rdfs:comment "A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure."@en ;
                              rdfs:isDefinedBy sim:SimulationOntology ;
                              rdfs:label "Healed reality counterpart"@en .
@@ -255,6 +277,8 @@ sim:isVariantOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/preventedRealityCounterpart
 sim:preventedRealityCounterpart rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                                rdfs:domain sim:ProtectionSimulation ;
+                                rdfs:range sim:RealityCounterpart ;
                                 rdfs:comment "A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum."@en ;
                                 rdfs:isDefinedBy sim:SimulationOntology ;
                                 rdfs:label "Prevented reality counterpart"@en .
@@ -263,6 +287,8 @@ sim:preventedRealityCounterpart rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/restoredRealityCounterpart
 sim:restoredRealityCounterpart rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                               rdfs:domain sim:Simulation ;
+                               rdfs:range sim:RealityCounterpart ;
                                rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart)."@en ;
                                rdfs:isDefinedBy sim:SimulationOntology ;
                                rdfs:label "Restored reality counterpart"@en .
@@ -283,6 +309,11 @@ sim:symbolicMeaning rdf:type owl:ObjectProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   rdfs:label "Entity" .
+
 
 ###  https://www.w3id.org/simulation/ontology/AllusionSimulation
 sim:AllusionSimulation rdf:type owl:Class ;

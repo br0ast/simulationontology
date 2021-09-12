@@ -7,11 +7,13 @@
      xmlns:sim="https://www.w3id.org/simulation/ontology/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vocab="https://www.w3.org/1999/xhtml/vocab#">
     <owl:Ontology rdf:about="https://www.w3id.org/simulation/ontology/">
         <dc:contributor>Aldo Gangemi</dc:contributor>
         <dc:contributor>Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
+        <dc:title xml:lang="en">Simulation Ontology</dc:title>
         <rdfs:comment xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</rdfs:comment>
         <rdfs:label xml:lang="en">Simulation Ontology</rdfs:label>
     </owl:Ontology>
@@ -41,6 +43,24 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- https://www.w3.org/1999/xhtml/vocab#license -->
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/1999/xhtml/vocab#license"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -54,7 +74,11 @@
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:label>was derived from</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -62,6 +86,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/easedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Eased reality counterpart</rdfs:label>
@@ -73,6 +99,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Elicited reality counterpart</rdfs:label>
@@ -193,6 +221,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/healedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/HealingSimulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Healed reality counterpart</rdfs:label>
@@ -361,6 +391,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/preventedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Prevented reality counterpart</rdfs:label>
@@ -372,6 +404,8 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/restoredRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Restored reality counterpart</rdfs:label>
@@ -403,6 +437,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:label>Entity</rdfs:label>
+    </owl:Class>
     
 
 
