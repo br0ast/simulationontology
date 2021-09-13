@@ -1,48 +1,76 @@
 @prefix : <https://www.w3id.org/simulation/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sim: <https://www.w3id.org/simulation/ontology/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vocab: <https://www.w3.org/1999/xhtml/vocab#> .
+@prefix schema: <http://schema.org/> .
 @base <https://www.w3id.org/simulation/ontology/> .
 
 <https://www.w3id.org/simulation/ontology/> rdf:type owl:Ontology ;
-                                             <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi" ,
-                                                                                           "Marieke van Erp" ;
-                                             <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" ;
-                                             <http://purl.org/dc/elements/1.1/title> "Simulation Ontology"@en ;
+                                             dc:contributor "Aldo Gangemi" ,
+                                                            "Marieke van Erp" ;
+                                             dc:creator "Bruno Sartini" ;
+                                             dc:title "Simulation Ontology"@en ;
+                                             dct:created "September 13th, 2021"@en ;
+                                             dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                             vann:preferredNamespacePrefix "sim"@en ;
+                                             vann:preferredNamespaceUri "https://www.w3id.org/simulation/ontology/" ;
+                                             schema:citation "Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ "@en ;
                                              rdfs:comment "This ontology was designed to conceptualize symbolic meanings following Baudrillard's Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class."@en ;
-                                             rdfs:label "Simulation Ontology"@en ;
-                                             <https://www.w3.org/1999/xhtml/vocab#dct:rights> <https://creativecommons.org/licenses/by/4.0/> ,
-                                                                                              "The ontology is released under CC-BY 4.0 license. More information here https://creativecommons.org/licenses/by/4.0/"@en .
+                                             rdfs:label "Simulation Ontology"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+dc:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/license
-<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+dc:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/citation
+schema:citation rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.w3.org/1999/xhtml/vocab#license
-<https://www.w3.org/1999/xhtml/vocab#license> rdf:type owl:AnnotationProperty .
+vocab:license rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.w3.org/1999/xhtml/vocab#dct:rights
-<https://www.w3.org/1999/xhtml/vocab#dct:rights> rdf:type owl:AnnotationProperty .
+vocab:dct:rights rdf:type owl:AnnotationProperty .
 
 
 #################################################################

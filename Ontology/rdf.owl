@@ -2,7 +2,9 @@
 <rdf:RDF xmlns="https://www.w3id.org/simulation/ontology/"
      xml:base="https://www.w3id.org/simulation/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dct="https://www.w3.org/1999/xhtml/vocab#dct:"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sim="https://www.w3id.org/simulation/ontology/"
@@ -17,8 +19,11 @@
         <dc:title xml:lang="en">Simulation Ontology</dc:title>
         <rdfs:comment xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</rdfs:comment>
         <rdfs:label xml:lang="en">Simulation Ontology</rdfs:label>
-        <dct:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:rights xml:lang="en">The ontology is released under CC-BY 4.0 license. More information here https://creativecommons.org/licenses/by/4.0/</dct:rights>
+        <dct:created xml:lang="en">September 13th, 2021</dct:created>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix xml:lang="en">sim</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://www.w3id.org/simulation/ontology/</vann:preferredNamespaceUri>
+        <schema:citation xml:lang="en">Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ </schema:citation>
     </owl:Ontology>
     
 
