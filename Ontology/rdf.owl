@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://www.w3id.org/simulation/ontology/"
      xml:base="https://www.w3id.org/simulation/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="https://www.w3.org/1999/xhtml/vocab#dct:"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sim="https://www.w3id.org/simulation/ontology/"
@@ -16,6 +17,8 @@
         <dc:title xml:lang="en">Simulation Ontology</dc:title>
         <rdfs:comment xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</rdfs:comment>
         <rdfs:label xml:lang="en">Simulation Ontology</rdfs:label>
+        <dct:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:rights xml:lang="en">The ontology is released under CC-BY 4.0 license. More information here https://creativecommons.org/licenses/by/4.0/</dct:rights>
     </owl:Ontology>
     
 
@@ -58,6 +61,12 @@
     <!-- https://www.w3.org/1999/xhtml/vocab#license -->
 
     <owl:AnnotationProperty rdf:about="https://www.w3.org/1999/xhtml/vocab#license"/>
+    
+
+
+    <!-- https://www.w3.org/1999/xhtml/vocab#dct:rights -->
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/1999/xhtml/vocab#dct:rights"/>
     
 
 
@@ -378,8 +387,22 @@
     <!-- https://www.w3id.org/simulation/ontology/isVariantOf -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isVariantOf">
-        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
-        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+                    <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Inverse property of has variant</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is variant of</rdfs:label>
@@ -453,6 +476,7 @@
     <owl:Class rdf:about="https://www.w3id.org/simulation/ontology/AllusionSimulation">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:comment xml:lang="en">A specific kind of simulation in which the simulacrum alludes to the reality counterpart. Is a more subtle symbolic relationship than the normal simulation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Allusion Simulation</rdfs:label>
     </owl:Class>
     
