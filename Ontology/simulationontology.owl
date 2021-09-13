@@ -84,9 +84,21 @@ vocab:dct:rights rdf:type owl:AnnotationProperty .
                                            rdfs:label "was derived from" .
 
 
+###  https://www.w3.org/1999/xhtml/vocab#isSymbolicMeaningOf
+vocab:isSymbolicMeaningOf rdf:type owl:ObjectProperty ;
+                          owl:inverseOf sim:symbolicMeaning ;
+                          rdfs:domain sim:RealityCounterpart ;
+                          rdfs:range sim:Simulacrum ;
+                          owl:propertyChainAxiom ( sim:isRealityCounterpartOf
+                                                 ) ;
+                          rdfs:comment "Inverse property of symbolic meaning"@en ;
+                          rdfs:label "Is symbolic meaning of"@en .
+
+
 ###  https://www.w3id.org/simulation/ontology/easedRealityCounterpart
 sim:easedRealityCounterpart rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                            owl:inverseOf sim:isEasedRealityCounterpartOf ;
                             rdfs:domain sim:Simulation ;
                             rdfs:range sim:RealityCounterpart ;
                             rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth."@en ;
@@ -97,6 +109,7 @@ sim:easedRealityCounterpart rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart
 sim:elicitedRealityCounterpart rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                               owl:inverseOf sim:isElicitedRealityCounterpartOf ;
                                rdfs:domain sim:Simulation ;
                                rdfs:range sim:RealityCounterpart ;
                                rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum."@en ;
@@ -186,6 +199,7 @@ sim:hasVariant rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/healedRealityCounterpart
 sim:healedRealityCounterpart rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf sim:hasRealityCounterpart ;
+                             owl:inverseOf sim:isHealedRealityCounterpartOf ;
                              rdfs:domain sim:HealingSimulation ;
                              rdfs:range sim:RealityCounterpart ;
                              rdfs:comment "A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure."@en ;
@@ -253,6 +267,7 @@ sim:isPersonifiedVariantOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf
 sim:isPreventedRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                    owl:inverseOf sim:preventedRealityCounterpart ;
                                     rdfs:domain sim:RealityCounterpart ;
                                     rdfs:range sim:ProtectionSimulation ;
                                     rdfs:comment "Inversed property of prevented reality counterpart"@en ;
@@ -272,6 +287,7 @@ sim:isRealityCounterpartOf rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf
 sim:isRestoredRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf sim:isRealityCounterpartOf ;
+                                   owl:inverseOf sim:restoredRealityCounterpart ;
                                    rdfs:domain sim:RealityCounterpart ;
                                    rdfs:range sim:ProtectionSimulation ;
                                    rdfs:comment "Inverse property of restored reality counterpart"@en ;

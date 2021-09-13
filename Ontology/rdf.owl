@@ -3,27 +3,28 @@
      xml:base="https://www.w3id.org/simulation/ontology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sim="https://www.w3id.org/simulation/ontology/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dct1="https://www.w3.org/1999/xhtml/vocab#dct:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:vocab="https://www.w3.org/1999/xhtml/vocab#">
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:vocab="https://www.w3.org/1999/xhtml/vocab#"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://www.w3id.org/simulation/ontology/">
         <dc:contributor>Aldo Gangemi</dc:contributor>
         <dc:contributor>Marieke van Erp</dc:contributor>
         <dc:creator>Bruno Sartini</dc:creator>
         <dc:title xml:lang="en">Simulation Ontology</dc:title>
-        <rdfs:comment xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</rdfs:comment>
-        <rdfs:label xml:lang="en">Simulation Ontology</rdfs:label>
         <dct:created xml:lang="en">September 13th, 2021</dct:created>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix xml:lang="en">sim</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://www.w3id.org/simulation/ontology/</vann:preferredNamespaceUri>
         <schema:citation xml:lang="en">Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ </schema:citation>
+        <rdfs:comment xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</rdfs:comment>
+        <rdfs:label xml:lang="en">Simulation Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -63,6 +64,36 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    
+
+
     <!-- https://www.w3.org/1999/xhtml/vocab#license -->
 
     <owl:AnnotationProperty rdf:about="https://www.w3.org/1999/xhtml/vocab#license"/>
@@ -96,10 +127,26 @@
     
 
 
+    <!-- https://www.w3.org/1999/xhtml/vocab#isSymbolicMeaningOf -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/1999/xhtml/vocab#isSymbolicMeaningOf">
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/symbolicMeaning"/>
+        <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">Inverse property of symbolic meaning</rdfs:comment>
+        <rdfs:label xml:lang="en">Is symbolic meaning of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.w3id.org/simulation/ontology/easedRealityCounterpart -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/easedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth.</rdfs:comment>
@@ -113,6 +160,7 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum.</rdfs:comment>
@@ -235,6 +283,7 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/healedRealityCounterpart">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/hasRealityCounterpart"/>
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/HealingSimulation"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:comment xml:lang="en">A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure.</rdfs:comment>
@@ -326,6 +375,7 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/preventedRealityCounterpart"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
         <rdfs:comment xml:lang="en">Inversed property of prevented reality counterpart</rdfs:comment>
@@ -351,6 +401,7 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+        <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/restoredRealityCounterpart"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
         <rdfs:comment xml:lang="en">Inverse property of restored reality counterpart</rdfs:comment>
