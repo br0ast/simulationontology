@@ -19,7 +19,9 @@
         <dc:creator>Bruno Sartini</dc:creator>
         <dc:title xml:lang="en">Simulation Ontology</dc:title>
         <dct:created xml:lang="en">September 13th, 2021</dct:created>
+        <dct:issued xml:lang="en">September 13th, 2021</dct:issued>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:publisher>Bruno Sartini</dct:publisher>
         <vann:preferredNamespacePrefix xml:lang="en">sim</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://www.w3id.org/simulation/ontology/</vann:preferredNamespaceUri>
         <schema:citation xml:lang="en">Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ </schema:citation>
@@ -70,9 +72,21 @@
     
 
 
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -135,6 +149,7 @@
         <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulacrum"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
+            <rdf:Description rdf:about="https://www.w3id.org/simulation/ontology/hasSimulacrum"/>
         </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">Inverse property of symbolic meaning</rdfs:comment>
         <rdfs:label xml:lang="en">Is symbolic meaning of</rdfs:label>
@@ -403,7 +418,7 @@
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"/>
         <owl:inverseOf rdf:resource="https://www.w3id.org/simulation/ontology/restoredRealityCounterpart"/>
         <rdfs:domain rdf:resource="https://www.w3id.org/simulation/ontology/RealityCounterpart"/>
-        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/ProtectionSimulation"/>
+        <rdfs:range rdf:resource="https://www.w3id.org/simulation/ontology/Simulation"/>
         <rdfs:comment xml:lang="en">Inverse property of restored reality counterpart</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://www.w3id.org/simulation/ontology/SimulationOntology"/>
         <rdfs:label xml:lang="en">Is restored reality counterpart of</rdfs:label>

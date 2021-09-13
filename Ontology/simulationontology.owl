@@ -6,6 +6,7 @@
 @prefix sim: <https://www.w3id.org/simulation/ontology/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct1: <https://www.w3.org/1999/xhtml/vocab#dct:> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vocab: <https://www.w3.org/1999/xhtml/vocab#> .
@@ -18,7 +19,9 @@
                                              dc:creator "Bruno Sartini" ;
                                              dc:title "Simulation Ontology"@en ;
                                              dct:created "September 13th, 2021"@en ;
+                                             dct:issued "September 13th, 2021"@en ;
                                              dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                             dct:publisher "Bruno Sartini" ;
                                              vann:preferredNamespacePrefix "sim"@en ;
                                              vann:preferredNamespaceUri "https://www.w3id.org/simulation/ontology/" ;
                                              schema:citation "Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ "@en ;
@@ -49,8 +52,16 @@ dc:title rdf:type owl:AnnotationProperty .
 dct:created rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -70,7 +81,7 @@ vocab:license rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.w3.org/1999/xhtml/vocab#dct:rights
-vocab:dct:rights rdf:type owl:AnnotationProperty .
+dct1:rights rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -90,6 +101,7 @@ vocab:isSymbolicMeaningOf rdf:type owl:ObjectProperty ;
                           rdfs:domain sim:RealityCounterpart ;
                           rdfs:range sim:Simulacrum ;
                           owl:propertyChainAxiom ( sim:isRealityCounterpartOf
+                                                   sim:hasSimulacrum
                                                  ) ;
                           rdfs:comment "Inverse property of symbolic meaning"@en ;
                           rdfs:label "Is symbolic meaning of"@en .
@@ -289,7 +301,7 @@ sim:isRestoredRealityCounterpartOf rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf sim:isRealityCounterpartOf ;
                                    owl:inverseOf sim:restoredRealityCounterpart ;
                                    rdfs:domain sim:RealityCounterpart ;
-                                   rdfs:range sim:ProtectionSimulation ;
+                                   rdfs:range sim:Simulation ;
                                    rdfs:comment "Inverse property of restored reality counterpart"@en ;
                                    rdfs:isDefinedBy sim:SimulationOntology ;
                                    rdfs:label "Is restored reality counterpart of"@en .
