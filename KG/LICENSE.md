@@ -1,0 +1,1 @@
+HyperReal is released under the CC-BY 4.0 share alike license. For more information check https://creativecommons.org/licenses/by-sa/4.0/

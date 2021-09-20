@@ -1,0 +1,1 @@
+This ontology is released under the CC BY 4.0 license. Please attribute to "Bruno Sartini" orcid: https://orcid.org/0000-0002-9152-4402. More information about the license here: https://creativecommons.org/licenses/by/4.0/ .
