@@ -1,5 +1,5 @@
 @prefix ex: <https://example.org/> .
-@prefix sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+@prefix sim: <https://w3id.org/simulation/ontology/> .
 
 ### Simulations
 

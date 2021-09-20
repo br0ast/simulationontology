@@ -8,11 +8,11 @@ CQ1.1
 
 ### General Question
 
-Retrieve all the symbolic meanings of a simulacrum.
+What are the reality counterparts of the simulations that have a specific simulacrum?
 
 ### Example Applied Question
 
-Retrieve all the symbolic meanings of `ashTree`.
+What are the reality counterparts of the simulations that have `ashTree` as a simulacrum?
 
 #### Expected Outcome
 
@@ -36,11 +36,11 @@ CQ1.2
 
 ### General Question
 
-Retrieve all the simulations that have a certain context.
+What are the simulations that exist within a certain context?
 
 ### Example Applied Question
 
-Retrieve all the simulations that have `flowerLanguage` as the context.
+What are the simulations that exist within a  `flowerLanguage` context?
 
 #### Expected Outcome
 
@@ -63,11 +63,11 @@ CQ1.3
 
 ### General Question
 
-Retrieve all the simulations in which an element is present as either a simulacrum or a reality counterpart
+What are the simulations in which a certain element participates as either the simulacrum or reality counterpart?
 
 ### Example Applied Question
 
-Retrieve all the simulations in which `odin` is present as either a simulacrum or a reality counterpart.
+What are the simulations in which `odin` participates as either the simulacrum or reality counterpart?
 
 #### Expected Outcome
 
@@ -90,15 +90,15 @@ CQ1.4
 
 ### General Question
 
-Retrieve all the simulacra and their reality counterparts that take part in a simulation in a certain context
+What are the simulacra and reality counterparts that take part in simulations of a certain context?
 
 ### Example Applied Question
 
-Retrieve all the simulacra and their reality counterparts that take part in a simulation in a `generalOrUnknown` context.
+What are the simulacra and reality counterparts that take part in simulations of a `generalOrUnknown` context?
 
 #### Expected Outcome
 
-A table with simulacras and their reality counterparts
+A table with simulacra and their reality counterparts
 
 #### Results
 
@@ -119,11 +119,11 @@ CQ1.5
 
 ### General Question
 
-Retrieve all the simulacrum that have a common reality counterpart in a simulation along with the context of the simulation.
+What are the simulacra that share the same reality counterpart in their respective simulations and what is the context in which their simulations exist?
 
 ### Example Applied Question
 
-Retrieve all the simulacra that have a common reality counterpart in a simulation along with the context of the simulation.
+What are the simulacra that share the same reality counterpart in their respective simulations and what is the context in which their simulations exist?
 
 #### Expected Outcome
 
@@ -148,11 +148,11 @@ CQ1.6
 
 ### General Question
 
-Retrieve all the reality counterparts belonging to simulations that have a specific simulacrum along with the context of the simulation.
+What are the reality counterparts that take part in simulations with a specific simulacrum and what is the context of those simulations?
 
 ### Example Applied Question
 
-Retrieve all the reality counterparts that have `ashTree` as a simulacrum along with the context of the simulation that links these two elements.
+What are the reality counterparts that take part in simulations with `ashTree` as a simulacrum and what is the context of those simulations?
 
 #### Expected Outcome
 
@@ -178,7 +178,7 @@ CQ1.7
 
 ### General Question
 
-Retrieve all the simulations that have multiple simulacra.
+Are there simulations that have multiple simulacra?
 
 ### Example Applied Question
 
@@ -186,11 +186,11 @@ Retrieve all the simulation that have multiple simulacra.
 
 #### Expected Outcome
 
-Nothing, as there shoudln't be simulation that have more than one simulacrum
+A negative boolean result.
 
 #### Results
 
-None
+FALSE
 
 #### Based on
 

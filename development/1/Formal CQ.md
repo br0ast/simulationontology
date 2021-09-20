@@ -2,7 +2,7 @@
 
 ## CQ1.1
 
-Retrieve all the symbolic meanings of `ashTree`.
+What are the reality counterparts of the simulations that have `ashTree` as a simulacrum?
 
 ```SPARQL
 
@@ -18,7 +18,7 @@ SELECT ?rc WHERE {
 
 ## CQ1.2
 
-Retrieve all the simulations that have `flowerLanguage` as the context.
+What are the simulations that exist within a  `flowerLanguage` context?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -32,7 +32,7 @@ SELECT ?simulation WHERE {
 
 ## CQ1.3
 
-Retrieve all the simulations in which `odin` is present as either a simulacrum or a reality counterpart.
+What are the simulations in which `odin` participates as either the simulacrum or reality counterpart?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -46,7 +46,7 @@ where {
 
 ## CQ1.4
 
-Retrieve all the simulacra and their reality counterparts that take part in a simulation in a `generalOrUnknown` context.
+What are the simulacra and reality counterparts that take part in simulations of a `generalOrUnknown` context?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -62,7 +62,7 @@ where {
 
 ## CQ1.5
 
-Retrieve all the simulacra that have a common reality counterpart in a simulation along with the context of the simulation.
+What are the simulacra that share the same reality counterpart in their respective simulations and what is the context in which their simulations exist?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -80,7 +80,7 @@ filter (?simulation1 != ?simulation2)
 
 ## CQ1.6
 
-Retrieve all the reality counterparts that have `ashTree` as a simulacrum along with the context of the simulation that links these two elements.
+What are the reality counterparts that take part in simulations with `ashTree` as a simulacrum and what is the context of those simulations?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -95,13 +95,13 @@ SELECT distinct ?rc ?context where {
 
 ## CQ1.7
 
-Retrieve all the simulations that have multiple simulacra.
+Are there simulations that have multiple simulacra?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
 PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#>  
 
-SELECT ?simulation where {
+ASK {
 ?simulation sim:hasSimulacrum ?simulacrum1;
             sim:hasSimulacrum ?simulacrum2 .
 FILTER (?simulacrum1 != ?simulacrum2)
