@@ -2,7 +2,7 @@
 
 This is the documentation of the development of the Simulation Ontology. The ontology purpose is to describe background symbolic knowledge about cultural Symbolism.
 
-It was developed using SAMOD methodology [samod link].
+It was developed using [SAMOD](https://essepuntato.it/samod/) and [Extreme Design](http://ceur-ws.org/Vol-516/pap21.pdf) methodologies.
 
 The development stage was composed by three iterations:
 
