@@ -15,7 +15,7 @@
     dc:title "HyperReal"@en ;
     dct:created "September 13th, 2021"@en ;
     dct:issued "September 13th, 2021"@en ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     prov:wasDerivedFrom <http://dbpedia.org>, <http://wordnet-rdf.princeton.edu>
     dct:publisher "Bruno Sartini" ;
     schema:citation "Cite this Knowledge Graph as: Sartini, B. HyperReal. https://www.w3id.org/simulation/data/ "@en ;
