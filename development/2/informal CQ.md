@@ -8,11 +8,11 @@ CQ2.1
 
 ### General Question
 
-Retrieve all simulations along with their sources.
+What are the simulations and which sources support their existence?
 
 ### Example Applied Question
 
-Retrieve all simulations along with their sources.
+What are the simulations and which sources support their existence?
 
 #### Expected Outcome
 
@@ -45,11 +45,12 @@ CQ2.2
 
 ### General Question
 
-Retrieve all the simulations and respective reality counterparts and sources that have the same simulacrum but a different source.
+What are the simulations and respective reality counterparts that have the same simulacrum but a different source?
+
 
 ### Example Applied Question
 
-Retrieve all the simulations and respective reality counterparts and sources that have the same simulacrum but a different source.
+What are the simulations and respective reality counterparts that have the same simulacrum but a different source?
 
 #### Expected Outcome
 
@@ -74,11 +75,13 @@ CQ2.3
 
 ### General Question
 
-Retrieve all the simulations that have a certain simulacrum along with the simulations of the variants of the simulacrum.
+What are the reality counterparts of the simulations with a specific
+simulacrum or its variants?
 
 ### Example Applied Question
 
-Retrieve all the simulations that have `rose` as a simulacrum along with the simulations of the variants of `rose`.
+What are the reality counterparts of the simulations with `rose` as a
+simulacrum or its variants?
 
 #### Expected Outcome
 
@@ -102,11 +105,11 @@ CQ2.4
 
 ### General Question
 
-Retrieve all the variants of a certain element.
+What are the variants of a certain element?
 
 ### Example Applied Question
 
-Retrieve all the variants of `man`.
+What are the variants of `man`?
 
 #### Expected Outcome
 
@@ -128,11 +131,11 @@ CQ2.5
 
 ### General Question
 
-Retrieve all the contexts of the simulations listed in a specific source.
+What are the contexts of the simulations listed in a specific source?
 
 ### Example Applied Question
 
-Retrieve all the contexts of the simulations listed in `dictionaryofsymbols1`.
+What are the contexts of the simulations listed in `dictionaryPfSymbols1`?
 
 #### Expected Outcome
 
@@ -156,19 +159,19 @@ CQ2.6
 
 ### General Question
 
-Retrieve all the simulations without a source.
+Are there simulations that do not have a source? 
 
 ### Example Applied Question
 
-Retrieve all the simulations without a source.
+Are there simulations that do not have a source? 
 
 #### Expected Outcome
 
-Nothing, as there should not be simulations without a source.
+A negative boolean result.
 
 #### Results
 
-None
+FALSE
 
 #### Based on
 

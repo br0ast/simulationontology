@@ -2,7 +2,7 @@
 
 ## CQ3.1
 
-Retrieve all Protection Simulations.
+What are the simulations in which the simulacra are seen as a symbolical protection against reality counterparts?
 
 ```SPARQL
 
@@ -16,7 +16,7 @@ SELECT * WHERE {
 
 ## CQ3.2
 
-Retrieve all the simulations that have `charm` as a reality counterpart along with additional reality counterparts and their specific relationships.
+What are the simulations that have `charm` as a reality counterpart and other additional reality counterparts, and what specific relationship link  those simulations to their reality counterparts?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -33,7 +33,7 @@ filter (?p1 != ?p)
 
 ## CQ3.3
 
-Retrieve all the Healing Simulations along with their simulacrum, context and the healed reality counterpart.
+What are the simulations and their respective simulacra, contexts and reality counterparts in which their simulacrum is a symbolical cure for their reality counterpart?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -49,7 +49,7 @@ sim:hasContext ?context .
 
 ## CQ3.4
 
-Retrieve all the Simulation that express a specific symbolic relationship along with the specific type of simulation.
+What are the simulations that express a specific symbolic relationship and what is the specific relationship?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -65,7 +65,7 @@ MINUS {?simulation a sim:Simulation}
 
 ## CQ3.5
 
-Retrieve all the reality counterparts that are not part in a specific type of simulation and that are not the direct symbolic meaning of the simulacrum.
+What are the reality counterparts that are not part of a specific type of simulation but that are not the direct symbolic meaning of a simulacrum?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
@@ -81,7 +81,7 @@ FILTER (?p != sim:isRealityCounterpartOf)
 
 ## CQ3.6
 
-Retrieve all sources that contain simulations that express a symbolic protection against `plague`.
+What are the sources that contain simulations that express a symbolic protection against `plague`?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 

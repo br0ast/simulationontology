@@ -2,12 +2,12 @@
 
 ## CQ2.1
 
-Retrieve all simulations along with their sources.
+What are the simulations and which sources support their existence?
 
 ```SPARQL
 
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> 
+PREFIX sim: <https://w3id.org/simulation/ontology/> 
 
 SELECT * WHERE {
 ?simulation sim:hasSource ?source .
@@ -17,11 +17,11 @@ SELECT * WHERE {
 
 ## CQ2.2
 
-Retrieve all the simulations and respective reality counterparts and sources that have the same simulacrum but a different source.
+What are the simulations and respective reality counterparts that have the same simulacrum but a different source?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> 
+PREFIX sim: <https://w3id.org/simulation/ontology/> 
 
 SELECT distinct ?simulation ?rc ?source WHERE {
 ?simulation1 sim:hasSimulacrum ?simulacrum ;
@@ -38,11 +38,12 @@ filter (?simulation1 != ?simulation2 && ?source1 != ?source2) .
 
 ## CQ2.3
 
-Retrieve all the simulations that have `rose` as a simulacrum along with the simulations of the variants of `rose`.
+What are the reality counterparts of the simulations with `rose` as a
+simulacrum or its variants?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> 
+PREFIX sim: <https://w3id.org/simulation/ontology/> 
 
 SELECT distinct ?simulation
 where { {
@@ -53,14 +54,14 @@ ex:rose sim:isSimulacrumOf ?simulation .} UNION {ex:rose sim:hasVariant ?variant
 
 ## CQ2.4
 
-Retrieve all the variants of `man`.
+What are the variants of `man`?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#>  
+PREFIX sim: <https://w3id.org/simulation/ontology/>  
 
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#>  
+PREFIX sim: <https://w3id.org/simulation/ontology/>  
 
 SELECT distinct ?variant
 where {
@@ -70,11 +71,11 @@ ex:man sim:hasVariant ?variant .
 
 ## CQ2.5
 
-Retrieve all the contexts of the simulations listed in `dictionaryofsymbols1`.
+What are the contexts of the simulations listed in `dictionaryOfSymbols1`?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#>  
+PREFIX sim: <https://w3id.org/simulation/ontology/>  
 
 SELECT distinct ?context
 where {
@@ -85,13 +86,13 @@ where {
 
 ## CQ2.6
 
-Retrieve all the simulations without a source.
+Are there simulations that do not have a source?
 
 ```SPARQL
 PREFIX ex: <https://example.org/> 
-PREFIX sim: <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#>  
+PREFIX sim: <https://w3id.org/simulation/ontology/>  
 
-SELECT distinct ?rc ?context where {
+ASK {
 ?simulation a sim:Simulation .
 MINUS {?simulation sim:hasSource ?source}
 }
