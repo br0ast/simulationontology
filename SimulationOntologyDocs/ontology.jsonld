@@ -3,413 +3,1252 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
     }, {
-      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
     } ]
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
   } ]
 }, {
   "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
   } ]
 }, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isContextOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum"
+    "@id" : "https://www.w3id.org/simulation/ontology/healedRealityCounterpart"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/preventedRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf"
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isSimulacrumOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+    }, {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Source"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
     }, {
-      "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
     } ]
   } ]
 }, {
-  "@id" : "_:genid7",
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
-  } ]
-}, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasContext"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "https://www.w3id.org/simulation/ontology/Context"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ]
+}, {
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasSimulacrum"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Author: Bruno Sartini"
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3.org/ns/prov-o-inverses#hadDerivation"
   } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3.org/ns/prov-o-20130430"
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+    } ]
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid8"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  }, {
-    "@id" : "_:genid9"
-  } ]
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  }, {
-    "@id" : "_:genid10"
-  } ]
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid11"
-  } ]
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid12"
-  } ]
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid13"
-  }, {
-    "@id" : "_:genid14"
-  }, {
-    "@id" : "_:genid15"
-  } ]
+  "@id" : "http://schema.org/citation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid16"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship",
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart",
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext",
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity. In the context of the Simulation ontology this property links a Simulation to its source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was derived from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context"
+    "@id" : "http://www.w3.org/ns/prov#Entity"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf"
+    "@id" : "https://www.w3.org/ns/prov-o-inverses#hadDerivation"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant",
+  "@id" : "https://www.w3.org/1999/xhtml/vocab#dct:rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/1999/xhtml/vocab#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/ns/prov-o-inverses#hadDerivation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of wasDerivedFrom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "had derivation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Aldo Gangemi"
+  }, {
+    "@value" : "Marieke van Erp"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Bruno Sartini"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Simulation Ontology"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@language" : "en",
+    "@value" : "September 13th, 2021"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@language" : "en",
+    "@value" : "September 13th, 2021"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Bruno Sartini"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@language" : "en",
+    "@value" : "sim"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://www.w3id.org/simulation/ontology/"
+  } ],
+  "http://schema.org/citation" : [ {
+    "@language" : "en",
+    "@value" : "Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ "
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl"
+  } ],
+  "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology was designed to conceptualize symbolic meanings following Baudrillard's Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simulation Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "1.2 (hasSource property deprecated and replaced by prov:wasDerivedFrom)"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/AllusionSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of simulation in which the simulacrum alludes to the reality counterpart. Is a more subtle symbolic relationship than the normal simulation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Allusion Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/AssociationSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulation in which the simulacrum is associated with the reality counterpart. It is a very general relationship and should be used only when the association is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is associated with\" Y."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Association Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/AttributeSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of simulation in which the simulacrum is a symbolic attribute of the reality counterpart. Like \"keys\" as an attribute of Saint Peter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Attribute Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference"
+  }, {
+    "@id" : "_:genid27"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  }, {
+    "@id" : "https://www.w3id.org/simulation/ontology/Source"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/CorrespondenceSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulation in which the simulacrum corresponds to the reality counterpart. It is a very general relationship and should be used only when the correspondence is explicitly state by the source. I.E. in a dictionary of symbols it is written that X \"corresponds to\" Y."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Correspondence Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/EmblematicSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of simulation in which the simulacrum is an emblem of the reality counterpart. Emblems are usually used as a graphical representation of something."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Emblematic Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/HealingSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of simulation in which the simulacrum is a symbolic cure for the reality counterpart. The reality counterpart in this kind of simulation is in fact usually something negative like a disease or a curse."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Healing Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/hasSimulacrum"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/healedRealityCounterpart"
+    } ]
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/ManifestationSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulation in which the simulacrum is a manifestation of the reality counterpart. It is a very general relationship and should be used only when the manifestation is explicitly stated by the source. I.E. in a dictionary of symbols it is written than X \"is a manifestation of\" Y."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manifestation Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/ProtectionSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific kind of simulation in which the simulacrum is a symbolic protection against the reality counterpart. Like agate as a protection against the evil eye."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Protection Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  }, {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/hasSimulacrum"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/preventedRealityCounterpart"
+    } ]
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A reality counterpart is the symbolic meaning associated to a simulacrum. It's the element that is symbolically referred by the simulacrum in a simulation. The term is taken from Baudrillard's Simulacra and Simulation theory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reality Counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/RelatednessSimulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulation in which the simulacrum is related to the reality counterpart. It is a very general relationship and should be used only when the relatedness is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is related to\" Y."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relatedness Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulacrum is something that carries a secondary meaning (the first being its literal meaning), of symbolic nature. i.e. a skull is the set of bones of a head (literal meaning), but it is also the symbol of death (secondary, symbolic meaning). The term is taken from Baudrillard's Simulacra and Simulation theory. The plural of simulacrum is simulacra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/Simulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A simulation is the symbolic relationship that happens between a symbol and its symbolic meaning. The term is taken from Baudrillard's Simulacra and Simulation philosophical theory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Source"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/hasSimulacrum"
+    } ]
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the source of a simulation. It is intended as the entity that acknowledges a simulation as a legitimate symbolic relationship. A source can either be a dictionary of symbols or a knowledge graph in which symbolic information are present."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid45"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/easedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Eased reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+    "@id" : "https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum",
+  "@id" : "https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Elicited reality counterpart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf"
+    "@id" : "https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship",
+  "@id" : "https://www.w3id.org/simulation/ontology/hasContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a Simulation to its context"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship"
+    "@id" : "https://www.w3id.org/simulation/ontology/Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf"
+    "@id" : "https://www.w3id.org/simulation/ontology/isContextOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant",
+  "@id" : "https://www.w3id.org/simulation/ontology/hasPersonifiedVariant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is used when a variant is intended as the personified variant of the other entity. Like \"Air\" has personified variant \"Air personified\""
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has personified variant"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid4"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasVariant"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf",
+  "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a Simulation to its reality counterpart. More specific relationships between a simulation and its reality counterpart are available as subproperties of this property."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has reality counterpart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "https://www.w3id.org/simulation/ontology/hasSimulacrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a simulation to its simulacrum."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has simulacrum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isSimulacrumOf"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a Simulation with its source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has source"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : "deprecated on the 1.2 version"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/hasVariant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a simulacrum or a reality counterpart to a variant of theirs. A variant is intended as a narrower concept than one of those two elements. It is also used to define a set of elements in relation to a single element that is part of that set. I.e. \"man and woman\" is a variant of \"woman\", \"golden apple\" is a variant of \"apple\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has variant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation"
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isVariantOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf",
+  "@id" : "https://www.w3id.org/simulation/ontology/healedRealityCounterpart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
+    "@id" : "https://www.w3id.org/simulation/ontology/HealingSimulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Healed reality counterpart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart",
+  "@id" : "https://www.w3id.org/simulation/ontology/isContextOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "inverse property of has context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is context of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart"
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.w3.org/ns/prov-o",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart" : [ {
-    "@id" : "http://www.w3.org/ns/prov#EmptyCollection"
+  "@id" : "https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of eased reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is eased reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of elicited reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is elicited reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of healed reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is healed reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/HealingSimulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of has personified variant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is personified variant of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isVariantOf"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inversed property of prevented reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is prevented reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/ProtectionSimulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/preventedRealityCounterpart"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inversed property of has reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of restored reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is restored reality counterpart of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/isRealityCounterpartOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/restoredRealityCounterpart"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isSimulacrumOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inversed property of has simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is simulacrum of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isSourceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of has source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is source of"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : "deprecated on the 1.2 version"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of symbolic meaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is symbolic meaning of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/symbolicMeaning"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/isVariantOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inverse property of has variant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is variant of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/preventedRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/ProtectionSimulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Prevented reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/restoredRealityCounterpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Restored reality counterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/simulation/ontology/symbolicMeaning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is a chain property that links a simulacrum with its reality counterpart. This direct relationship does not consider neither the context or the source of the simulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/Simulacrum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/SimulationOntology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Symbolic Meaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3id.org/simulation/ontology/RealityCounterpart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3id.org/simulation/ontology/isSimulacrumOf"
+    }, {
+      "@id" : "https://www.w3id.org/simulation/ontology/hasRealityCounterpart"
+    } ]
   } ]
 } ]

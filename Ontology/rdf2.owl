@@ -1,0 +1,1229 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.w3id.org/simulation/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.w3id.org/simulation/ontology/">
+    <Prefix name="" IRI="https://www.w3id.org/simulation/ontology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sim" IRI="https://www.w3id.org/simulation/ontology/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="vocab" IRI="https://www.w3.org/1999/xhtml/vocab#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Aldo Gangemi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Marieke van Erp</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Bruno Sartini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">Simulation Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:created"/>
+        <Literal xml:lang="en">September 13th, 2021</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="en">sim</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://www.w3id.org/simulation/ontology/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="schema:citation"/>
+        <Literal xml:lang="en">Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This ontology was designed to conceptualize symbolic meanings following Baudrillard&apos;s Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Simulation Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AllusionSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AssociationSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AttributeSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CorrespondenceSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EmblematicSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HealingSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ManifestationSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProtectionSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RelatednessSimulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Simulacrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Simulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Source"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="easedRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="elicitedRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPersonifiedVariant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSimulacrum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasVariant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="healedRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isContextOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isEasedRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isElicitedRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isHealedRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPersonifiedVariantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPreventedRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRestoredRealityCounterpartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSimulacrumOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isVariantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="preventedRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="restoredRealityCounterpart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="symbolicMeaning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="SimulationOntology"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="schema:citation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vocab:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.w3.org/1999/xhtml/vocab#dct:rights"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="AllusionSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AssociationSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Context"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isContextOf"/>
+            <Class IRI="Simulation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CorrespondenceSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EmblematicSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HealingSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HealingSimulation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="healedRealityCounterpart"/>
+            <Class IRI="RealityCounterpart"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManifestationSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtectionSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtectionSimulation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="preventedRealityCounterpart"/>
+            <Class IRI="RealityCounterpart"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RealityCounterpart"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isRealityCounterpartOf"/>
+            <Class IRI="Simulation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RelatednessSimulation"/>
+        <Class IRI="Simulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Simulacrum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isSimulacrumOf"/>
+            <Class IRI="Simulation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Simulation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasContext"/>
+            <Class IRI="Context"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Simulation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasRealityCounterpart"/>
+            <Class IRI="RealityCounterpart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Simulation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSource"/>
+            <Class IRI="Source"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Simulation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasSimulacrum"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Source"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isSourceOf"/>
+            <Class IRI="Simulation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Context"/>
+        <Class IRI="Simulation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Context"/>
+        <Class IRI="Source"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Simulation"/>
+        <Class IRI="Source"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="easedRealityCounterpart"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="elicitedRealityCounterpart"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPersonifiedVariant"/>
+        <ObjectProperty IRI="hasVariant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSource"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="healedRealityCounterpart"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isEasedRealityCounterpartOf"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isElicitedRealityCounterpartOf"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isHealedRealityCounterpartOf"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPersonifiedVariantOf"/>
+        <ObjectProperty IRI="isVariantOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPreventedRealityCounterpartOf"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRestoredRealityCounterpartOf"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSourceOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="preventedRealityCounterpart"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="restoredRealityCounterpart"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasContext"/>
+        <ObjectProperty IRI="isContextOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPersonifiedVariant"/>
+        <ObjectProperty IRI="isPersonifiedVariantOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSimulacrum"/>
+        <ObjectProperty IRI="isSimulacrumOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSource"/>
+        <ObjectProperty IRI="isSourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasVariant"/>
+        <ObjectProperty IRI="isVariantOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasSimulacrum"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="easedRealityCounterpart"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="elicitedRealityCounterpart"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasContext"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPersonifiedVariant"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSimulacrum"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSource"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasVariant"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="healedRealityCounterpart"/>
+        <Class IRI="HealingSimulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isContextOf"/>
+        <Class IRI="Context"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isEasedRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isElicitedRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isHealedRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPersonifiedVariantOf"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPreventedRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRestoredRealityCounterpartOf"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSimulacrumOf"/>
+        <Class IRI="Simulacrum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSourceOf"/>
+        <Class IRI="Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isVariantOf"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="preventedRealityCounterpart"/>
+        <Class IRI="ProtectionSimulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="restoredRealityCounterpart"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="symbolicMeaning"/>
+        <Class IRI="Simulacrum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="easedRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="elicitedRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasContext"/>
+        <Class IRI="Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPersonifiedVariant"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSimulacrum"/>
+        <Class IRI="Simulacrum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSource"/>
+        <Class IRI="Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasVariant"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="healedRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isContextOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isEasedRealityCounterpartOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isElicitedRealityCounterpartOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isHealedRealityCounterpartOf"/>
+        <Class IRI="HealingSimulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPersonifiedVariantOf"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPreventedRealityCounterpartOf"/>
+        <Class IRI="ProtectionSimulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRealityCounterpartOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRestoredRealityCounterpartOf"/>
+        <Class IRI="ProtectionSimulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSimulacrumOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSourceOf"/>
+        <Class IRI="Simulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isVariantOf"/>
+        <ObjectUnionOf>
+            <Class IRI="RealityCounterpart"/>
+            <Class IRI="Simulacrum"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="preventedRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="restoredRealityCounterpart"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="symbolicMeaning"/>
+        <Class IRI="RealityCounterpart"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isSimulacrumOf"/>
+            <ObjectProperty IRI="hasRealityCounterpart"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="symbolicMeaning"/>
+    </SubObjectPropertyOf>
+    <HasKey>
+        <Class IRI="HealingSimulation"/>
+        <ObjectProperty IRI="hasSimulacrum"/>
+        <ObjectProperty IRI="healedRealityCounterpart"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="ProtectionSimulation"/>
+        <ObjectProperty IRI="hasSimulacrum"/>
+        <ObjectProperty IRI="preventedRealityCounterpart"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="Simulation"/>
+        <ObjectProperty IRI="hasRealityCounterpart"/>
+        <ObjectProperty IRI="hasSimulacrum"/>
+    </HasKey>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#Entity</IRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/prov#wasDerivedFrom</IRI>
+        <Literal>was derived from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AllusionSimulation</IRI>
+        <Literal xml:lang="en">A specific kind of simulation in which the simulacrum alludes to the reality counterpart. Is a more subtle symbolic relationship than the normal simulation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>AllusionSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AllusionSimulation</IRI>
+        <Literal xml:lang="en">Allusion Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AssociationSimulation</IRI>
+        <Literal xml:lang="en">A simulation in which the simulacrum is associated with the reality counterpart. It is a very general relationship and should be used only when the association is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X &quot;is associated with&quot; Y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>AssociationSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AssociationSimulation</IRI>
+        <Literal xml:lang="en">Association Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AttributeSimulation</IRI>
+        <Literal xml:lang="en">A specific kind of simulation in which the simulacrum is a symbolic attribute of the reality counterpart. Like &quot;keys&quot; as an attribute of Saint Peter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>AttributeSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AttributeSimulation</IRI>
+        <Literal xml:lang="en">Attribute Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Context</IRI>
+        <Literal xml:lang="en">The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Context</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Context</IRI>
+        <Literal xml:lang="en">Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CorrespondenceSimulation</IRI>
+        <Literal xml:lang="en">A simulation in which the simulacrum corresponds to the reality counterpart. It is a very general relationship and should be used only when the correspondence is explicitly state by the source. I.E. in a dictionary of symbols it is written that X &quot;corresponds to&quot; Y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>CorrespondenceSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CorrespondenceSimulation</IRI>
+        <Literal xml:lang="en">Correspondence Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EmblematicSimulation</IRI>
+        <Literal xml:lang="en">A specific kind of simulation in which the simulacrum is an emblem of the reality counterpart. Emblems are usually used as a graphical representation of something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>EmblematicSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EmblematicSimulation</IRI>
+        <Literal xml:lang="en">Emblematic Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HealingSimulation</IRI>
+        <Literal xml:lang="en">A specific kind of simulation in which the simulacrum is a symbolic cure for the reality counterpart. The reality counterpart in this kind of simulation is in fact usually something negative like a disease or a curse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>HealingSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HealingSimulation</IRI>
+        <Literal xml:lang="en">Healing Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ManifestationSimulation</IRI>
+        <Literal xml:lang="en">A simulation in which the simulacrum is a manifestation of the reality counterpart. It is a very general relationship and should be used only when the manifestation is explicitly stated by the source. I.E. in a dictionary of symbols it is written than X &quot;is a manifestation of&quot; Y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ManifestationSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ManifestationSimulation</IRI>
+        <Literal xml:lang="en">Manifestation Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ProtectionSimulation</IRI>
+        <Literal xml:lang="en">A specific kind of simulation in which the simulacrum is a symbolic protection against the reality counterpart. Like agate as a protection against the evil eye.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ProtectionSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ProtectionSimulation</IRI>
+        <Literal xml:lang="en">Protection Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RealityCounterpart</IRI>
+        <Literal xml:lang="en">A reality counterpart is the symbolic meaning associated to a simulacrum. It&apos;s the element that is symbolically referred by the simulacrum in a simulation. The term is taken from Baudrillard&apos;s Simulacra and Simulation theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>RealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RealityCounterpart</IRI>
+        <Literal xml:lang="en">Reality Counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RelatednessSimulation</IRI>
+        <Literal xml:lang="en">A simulation in which the simulacrum is related to the reality counterpart. It is a very general relationship and should be used only when the relatedness is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X &quot;is related to&quot; Y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>RelatednessSimulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RelatednessSimulation</IRI>
+        <Literal xml:lang="en">Relatedness Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Simulacrum</IRI>
+        <Literal xml:lang="en">A simulacrum is something that carries a secondary meaning (the first being its literal meaning), of symbolic nature. i.e. a skull is the set of bones of a head (literal meaning), but it is also the symbol of death (secondary, symbolic meaning). The term is taken from Baudrillard&apos;s Simulacra and Simulation theory. The plural of simulacrum is simulacra.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Simulacrum</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Simulacrum</IRI>
+        <Literal xml:lang="en">Simulacrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Simulation</IRI>
+        <Literal xml:lang="en">A simulation is the symbolic relationship that happens between a symbol and its symbolic meaning. The term is taken from Baudrillard&apos;s Simulacra and Simulation philosophical theory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Simulation</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Simulation</IRI>
+        <Literal xml:lang="en">Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Source</IRI>
+        <Literal xml:lang="en">This class represents the source of a simulation. It is intended as the entity that acknowledges a simulation as a legitimate symbolic relationship. A source can either be a dictionary of symbols or a knowledge graph in which symbolic information are present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Source</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Source</IRI>
+        <Literal xml:lang="en">Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>easedRealityCounterpart</IRI>
+        <Literal xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>easedRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>easedRealityCounterpart</IRI>
+        <Literal xml:lang="en">Eased reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>elicitedRealityCounterpart</IRI>
+        <Literal xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>elicitedRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>elicitedRealityCounterpart</IRI>
+        <Literal xml:lang="en">Elicited reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasContext</IRI>
+        <Literal xml:lang="en">This property links a Simulation to its context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasContext</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasContext</IRI>
+        <Literal xml:lang="en">has Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPersonifiedVariant</IRI>
+        <Literal xml:lang="en">This property is used when a variant is intended as the personified variant of the other entity. Like &quot;Air&quot; has personified variant &quot;Air personified&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasPersonifiedVariant</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPersonifiedVariant</IRI>
+        <Literal xml:lang="en">Has personified variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRealityCounterpart</IRI>
+        <Literal xml:lang="en">This property links a Simulation to its reality counterpart. More specific relationships between a simulation and its reality counterpart are available as subproperties of this property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRealityCounterpart</IRI>
+        <Literal xml:lang="en">Has reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSimulacrum</IRI>
+        <Literal xml:lang="en">This property links a simulation to its simulacrum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSimulacrum</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSimulacrum</IRI>
+        <Literal xml:lang="en">Has simulacrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSource</IRI>
+        <Literal xml:lang="en">This property links a Simulation with its source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasSource</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSource</IRI>
+        <Literal xml:lang="en">Has source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasVariant</IRI>
+        <Literal xml:lang="en">This property links a simulacrum or a reality counterpart to a variant of theirs. A variant is intended as a narrower concept than one of those two elements. It is also used to define a set of elements in relation to a single element that is part of that set. I.e. &quot;man and woman&quot; is a variant of &quot;woman&quot;, &quot;golden apple&quot; is a variant of &quot;apple&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasVariant</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasVariant</IRI>
+        <Literal xml:lang="en">has variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>healedRealityCounterpart</IRI>
+        <Literal xml:lang="en">A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>healedRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>healedRealityCounterpart</IRI>
+        <Literal xml:lang="en">Healed reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isContextOf</IRI>
+        <Literal xml:lang="en">inverse property of has context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isContextOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isContextOf</IRI>
+        <Literal xml:lang="en">Is context of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isEasedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inverse property of eased reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isEasedRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isEasedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is eased reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isElicitedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inverse property of elicited reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isElicitedRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isElicitedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is elicited reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isHealedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inverse property of healed reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isHealedRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isHealedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is healed reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPersonifiedVariantOf</IRI>
+        <Literal xml:lang="en">Inverse property of has personified variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPersonifiedVariantOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPersonifiedVariantOf</IRI>
+        <Literal xml:lang="en">Is personified variant of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPreventedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inversed property of prevented reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPreventedRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPreventedRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is prevented reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inversed property of has reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRestoredRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Inverse property of restored reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isRestoredRealityCounterpartOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isRestoredRealityCounterpartOf</IRI>
+        <Literal xml:lang="en">Is restored reality counterpart of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSimulacrumOf</IRI>
+        <Literal xml:lang="en">Inversed property of has simulacrum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isSimulacrumOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSimulacrumOf</IRI>
+        <Literal xml:lang="en">Is simulacrum of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSourceOf</IRI>
+        <Literal xml:lang="en">Inverse property of has source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isSourceOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSourceOf</IRI>
+        <Literal xml:lang="en">Is source of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isVariantOf</IRI>
+        <Literal xml:lang="en">Inverse property of has variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isVariantOf</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isVariantOf</IRI>
+        <Literal xml:lang="en">Is variant of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>preventedRealityCounterpart</IRI>
+        <Literal xml:lang="en">A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>preventedRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>preventedRealityCounterpart</IRI>
+        <Literal xml:lang="en">Prevented reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>restoredRealityCounterpart</IRI>
+        <Literal xml:lang="en">A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>restoredRealityCounterpart</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>restoredRealityCounterpart</IRI>
+        <Literal xml:lang="en">Restored reality counterpart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>symbolicMeaning</IRI>
+        <Literal xml:lang="en">This property is a chain property that links a simulacrum with its reality counterpart. This direct relationship does not consider neither the context or the source of the simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>symbolicMeaning</IRI>
+        <IRI>SimulationOntology</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>symbolicMeaning</IRI>
+        <Literal xml:lang="en">Symbolic Meaning</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

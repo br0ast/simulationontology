@@ -1,71 +1,225 @@
-@prefix : <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#> .
+@prefix : <https://www.w3id.org/simulation/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> .
+@base <https://www.w3id.org/simulation/ontology/> .
 
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> rdf:type owl:Ontology ;
-                                                                         owl:imports <http://www.w3.org/ns/prov-o-20130430> ;
-                                                                         rdfs:comment "Author: Bruno Sartini" .
+<https://www.w3id.org/simulation/ontology/> rdf:type owl:Ontology ;
+                                             <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi" ,
+                                                                                           "Marieke van Erp" ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" ;
+                                             <http://purl.org/dc/elements/1.1/title> "Simulation Ontology"@en ;
+                                             <http://purl.org/dc/terms/created> "September 13th, 2021"@en ;
+                                             <http://purl.org/dc/terms/issued> "September 13th, 2021"@en ;
+                                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                             <http://purl.org/dc/terms/publisher> "Bruno Sartini" ;
+                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "sim"@en ;
+                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.w3id.org/simulation/ontology/" ;
+                                             <http://schema.org/citation> "Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ "@en ;
+                                             <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl> ,
+                                                                                                                                       <http://www.ontologydesignpatterns.org/cp/owl/situation.owl> ;
+                                             <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl> ;
+                                             rdfs:comment "This ontology was designed to conceptualize symbolic meanings following Baudrillard's Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class."@en ;
+                                             rdfs:label "Simulation Ontology"@en ;
+                                             owl:versionInfo "1.2 (hasSource property deprecated and replaced by prov:wasDerivedFrom)"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/citation
+<http://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/1999/xhtml/vocab#license
+<https://www.w3.org/1999/xhtml/vocab#license> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/1999/xhtml/vocab#dct:rights
+<https://www.w3.org/1999/xhtml/vocab#dct:rights> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart
+###  http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf <https://www.w3.org/ns/prov-o-inverses#hadDerivation> ;
+                                           rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity. In the context of the Simulation ontology this property links a Simulation to its source"@en ;
+                                           rdfs:label "was derived from" .
+
+
+###  https://www.w3.org/ns/prov-o-inverses#hadDerivation
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                                      rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                                      rdfs:comment "Inverse of wasDerivedFrom" ;
+                                                      rdfs:label "had derivation" .
+
+
+###  https://www.w3id.org/simulation/ontology/easedRealityCounterpart
 :easedRealityCounterpart rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :hasRealityCounterpart .
+                         rdfs:subPropertyOf :hasRealityCounterpart ;
+                         owl:inverseOf :isEasedRealityCounterpartOf ;
+                         rdfs:domain :Simulation ;
+                         rdfs:range :RealityCounterpart ;
+                         rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth."@en ;
+                         rdfs:isDefinedBy :SimulationOntology ;
+                         rdfs:label "Eased reality counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart
+###  https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart
 :elicitedRealityCounterpart rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :hasRealityCounterpart .
+                            rdfs:subPropertyOf :hasRealityCounterpart ;
+                            owl:inverseOf :isElicitedRealityCounterpartOf ;
+                            rdfs:domain :Simulation ;
+                            rdfs:range :RealityCounterpart ;
+                            rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum."@en ;
+                            rdfs:isDefinedBy :SimulationOntology ;
+                            rdfs:label "Elicited reality counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext
+###  https://www.w3id.org/simulation/ontology/hasContext
 :hasContext rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ,
+                               owl:topObjectProperty ;
             owl:inverseOf :isContextOf ;
             rdfs:domain :Simulation ;
-            rdfs:range :Context .
+            rdfs:range :Context ;
+            rdfs:comment "This property links a Simulation to its context"@en ;
+            rdfs:isDefinedBy :SimulationOntology ;
+            rdfs:label "has Context"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant
+###  https://www.w3id.org/simulation/ontology/hasPersonifiedVariant
 :hasPersonifiedVariant rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :hasVariant .
+                       rdfs:subPropertyOf :hasVariant ;
+                       owl:inverseOf :isPersonifiedVariantOf ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :RealityCounterpart
+                                                   :Simulacrum
+                                                 )
+                                   ] ;
+                       rdfs:range [ rdf:type owl:Class ;
+                                    owl:unionOf ( :RealityCounterpart
+                                                  :Simulacrum
+                                                )
+                                  ] ;
+                       rdfs:comment "This property is used when a variant is intended as the personified variant of the other entity. Like \"Air\" has personified variant \"Air personified\""@en ;
+                       rdfs:isDefinedBy :SimulationOntology ;
+                       rdfs:label "Has personified variant"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart
+###  https://www.w3id.org/simulation/ontology/hasRealityCounterpart
 :hasRealityCounterpart rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ,
+                                          owl:topObjectProperty ;
                        owl:inverseOf :isRealityCounterpartOf ;
                        rdfs:domain :Simulation ;
-                       rdfs:range :RealityCounterpart .
+                       rdfs:range :RealityCounterpart ;
+                       rdfs:comment "This property links a Simulation to its reality counterpart. More specific relationships between a simulation and its reality counterpart are available as subproperties of this property."@en ;
+                       rdfs:isDefinedBy :SimulationOntology ;
+                       rdfs:label "Has reality counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum
+###  https://www.w3id.org/simulation/ontology/hasSimulacrum
 :hasSimulacrum rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> ,
+                                  owl:topObjectProperty ;
+               owl:inverseOf :isSimulacrumOf ;
+               rdf:type owl:FunctionalProperty ;
                rdfs:domain :Simulation ;
-               rdfs:range :Simulacrum .
+               rdfs:range :Simulacrum ;
+               rdfs:comment "This property links a simulation to its simulacrum."@en ;
+               rdfs:isDefinedBy :SimulationOntology ;
+               rdfs:label "Has simulacrum"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource
+###  https://www.w3id.org/simulation/ontology/hasSource
 :hasSource rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
-           owl:inverseOf :isSourceOf ;
-           rdfs:domain :Simulation ;
-           rdfs:range :Source .
+           rdfs:comment "This property links a Simulation with its source"@en ;
+           rdfs:isDefinedBy :SimulationOntology ;
+           rdfs:label "Has source"@en ;
+           owl:deprecated "deprecated on the 1.2 version" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship
-:hasSymbolicRelationship rdf:type owl:ObjectProperty ;
-                         owl:inverseOf :isSymbolicRelationshipOf ;
-                         rdfs:domain :Simulation ;
-                         rdfs:range :SymbolicRelationship .
-
-
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant
+###  https://www.w3id.org/simulation/ontology/hasVariant
 :hasVariant rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isVariantOf ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :RealityCounterpart
                                         :Simulacrum
@@ -75,201 +229,401 @@
                          owl:unionOf ( :RealityCounterpart
                                        :Simulacrum
                                      )
-                       ] .
+                       ] ;
+            rdfs:comment "This property links a simulacrum or a reality counterpart to a variant of theirs. A variant is intended as a narrower concept than one of those two elements. It is also used to define a set of elements in relation to a single element that is part of that set. I.e. \"man and woman\" is a variant of \"woman\", \"golden apple\" is a variant of \"apple\"."@en ;
+            rdfs:isDefinedBy :SimulationOntology ;
+            rdfs:label "has variant"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart
+###  https://www.w3id.org/simulation/ontology/healedRealityCounterpart
 :healedRealityCounterpart rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :hasRealityCounterpart .
+                          rdfs:subPropertyOf :hasRealityCounterpart ;
+                          owl:inverseOf :isHealedRealityCounterpartOf ;
+                          rdfs:domain :HealingSimulation ;
+                          rdfs:range :RealityCounterpart ;
+                          rdfs:comment "A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure."@en ;
+                          rdfs:isDefinedBy :SimulationOntology ;
+                          rdfs:label "Healed reality counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf
+###  https://www.w3id.org/simulation/ontology/isContextOf
 :isContextOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ,
+                                owl:topObjectProperty ;
              rdfs:domain :Context ;
-             rdfs:range :Simulation .
+             rdfs:range :Simulation ;
+             rdfs:comment "inverse property of has context"@en ;
+             rdfs:isDefinedBy :SimulationOntology ;
+             rdfs:label "Is context of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf
 :isEasedRealityCounterpartOf rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf :isRealityCounterpartOf .
+                             rdfs:subPropertyOf :isRealityCounterpartOf ;
+                             rdfs:domain :RealityCounterpart ;
+                             rdfs:range :Simulation ;
+                             rdfs:comment "Inverse property of eased reality counterpart"@en ;
+                             rdfs:isDefinedBy :SimulationOntology ;
+                             rdfs:label "Is eased reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf
 :isElicitedRealityCounterpartOf rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :isRealityCounterpartOf .
+                                rdfs:subPropertyOf :isRealityCounterpartOf ;
+                                rdfs:domain :RealityCounterpart ;
+                                rdfs:range :Simulation ;
+                                rdfs:comment "Inverse property of elicited reality counterpart"@en ;
+                                rdfs:isDefinedBy :SimulationOntology ;
+                                rdfs:label "Is elicited reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf
 :isHealedRealityCounterpartOf rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :isRealityCounterpartOf .
+                              rdfs:subPropertyOf :isRealityCounterpartOf ;
+                              rdfs:domain :RealityCounterpart ;
+                              rdfs:range :HealingSimulation ;
+                              rdfs:comment "Inverse property of healed reality counterpart"@en ;
+                              rdfs:isDefinedBy :SimulationOntology ;
+                              rdfs:label "Is healed reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf
+:isPersonifiedVariantOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :isVariantOf ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :RealityCounterpart
+                                                    :Simulacrum
+                                                  )
+                                    ] ;
+                        rdfs:range [ rdf:type owl:Class ;
+                                     owl:unionOf ( :RealityCounterpart
+                                                   :Simulacrum
+                                                 )
+                                   ] ;
+                        rdfs:comment "Inverse property of has personified variant"@en ;
+                        rdfs:isDefinedBy :SimulationOntology ;
+                        rdfs:label "Is personified variant of"@en .
+
+
+###  https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf
 :isPreventedRealityCounterpartOf rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :isRealityCounterpartOf .
+                                 rdfs:subPropertyOf :isRealityCounterpartOf ;
+                                 owl:inverseOf :preventedRealityCounterpart ;
+                                 rdfs:domain :RealityCounterpart ;
+                                 rdfs:range :ProtectionSimulation ;
+                                 rdfs:comment "Inversed property of prevented reality counterpart"@en ;
+                                 rdfs:isDefinedBy :SimulationOntology ;
+                                 rdfs:label "Is prevented reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isRealityCounterpartOf
 :isRealityCounterpartOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ,
+                                           owl:topObjectProperty ;
                         rdfs:domain :RealityCounterpart ;
-                        rdfs:range :Simulation .
+                        rdfs:range :Simulation ;
+                        rdfs:comment "Inversed property of has reality counterpart"@en ;
+                        rdfs:isDefinedBy :SimulationOntology ;
+                        rdfs:label "Is reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf
+###  https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf
 :isRestoredRealityCounterpartOf rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :isRealityCounterpartOf .
+                                rdfs:subPropertyOf :isRealityCounterpartOf ;
+                                owl:inverseOf :restoredRealityCounterpart ;
+                                rdfs:domain :RealityCounterpart ;
+                                rdfs:range :Simulation ;
+                                rdfs:comment "Inverse property of restored reality counterpart"@en ;
+                                rdfs:isDefinedBy :SimulationOntology ;
+                                rdfs:label "Is restored reality counterpart of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf
+###  https://www.w3id.org/simulation/ontology/isSimulacrumOf
 :isSimulacrumOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ,
+                                   owl:topObjectProperty ;
                 rdfs:domain :Simulacrum ;
-                rdfs:range :Simulation .
+                rdfs:range :Simulation ;
+                rdfs:comment "Inversed property of has simulacrum"@en ;
+                rdfs:isDefinedBy :SimulationOntology ;
+                rdfs:label "Is simulacrum of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf
+###  https://www.w3id.org/simulation/ontology/isSourceOf
 :isSourceOf rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf [ owl:inverseOf <http://www.w3.org/ns/prov#wasDerivedFrom>
-                               ] ;
-            rdfs:domain :Source ;
-            rdfs:range :Simulation .
+            rdfs:comment "Inverse property of has source"@en ;
+            rdfs:isDefinedBy :SimulationOntology ;
+            rdfs:label "Is source of"@en ;
+            owl:deprecated "deprecated on the 1.2 version" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf
-:isSymbolicRelationshipOf rdf:type owl:ObjectProperty ;
-                          rdfs:domain :SymbolicRelationship ;
-                          rdfs:range :Simulation .
+###  https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf
+:isSymbolicMeaningOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> ,
+                                        owl:topObjectProperty ;
+                     owl:inverseOf :symbolicMeaning ;
+                     rdfs:domain :RealityCounterpart ;
+                     rdfs:range :Simulacrum ;
+                     rdfs:comment "Inverse property of symbolic meaning"@en ;
+                     rdfs:label "Is symbolic meaning of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf
+###  https://www.w3id.org/simulation/ontology/isVariantOf
 :isVariantOf rdf:type owl:ObjectProperty ;
-             rdfs:domain :Simulacrum ;
-             rdfs:range :Simulacrum .
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :RealityCounterpart
+                                         :Simulacrum
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :RealityCounterpart
+                                        :Simulacrum
+                                      )
+                        ] ;
+             rdfs:comment "Inverse property of has variant"@en ;
+             rdfs:isDefinedBy :SimulationOntology ;
+             rdfs:label "Is variant of"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart
+###  https://www.w3id.org/simulation/ontology/preventedRealityCounterpart
 :preventedRealityCounterpart rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf :hasRealityCounterpart .
+                             rdfs:subPropertyOf :hasRealityCounterpart ;
+                             rdfs:domain :ProtectionSimulation ;
+                             rdfs:range :RealityCounterpart ;
+                             rdfs:comment "A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum."@en ;
+                             rdfs:isDefinedBy :SimulationOntology ;
+                             rdfs:label "Prevented reality counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart
+###  https://www.w3id.org/simulation/ontology/restoredRealityCounterpart
 :restoredRealityCounterpart rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :hasRealityCounterpart .
+                            rdfs:subPropertyOf :hasRealityCounterpart ;
+                            rdfs:domain :Simulation ;
+                            rdfs:range :RealityCounterpart ;
+                            rdfs:comment "A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart)."@en ;
+                            rdfs:isDefinedBy :SimulationOntology ;
+                            rdfs:label "Restored reality counterpart"@en .
+
+
+###  https://www.w3id.org/simulation/ontology/symbolicMeaning
+:symbolicMeaning rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> ,
+                                    owl:topObjectProperty ;
+                 rdfs:domain :Simulacrum ;
+                 rdfs:range :RealityCounterpart ;
+                 owl:propertyChainAxiom ( :isSimulacrumOf
+                                          :hasRealityCounterpart
+                                        ) ;
+                 rdfs:comment "This property is a chain property that links a simulacrum with its reality counterpart. This direct relationship does not consider neither the context or the source of the simulation"@en ;
+                 rdfs:isDefinedBy :SimulationOntology ;
+                 rdfs:label "Symbolic Meaning"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation
+###  http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject
+<http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   rdfs:label "Entity" .
+
+
+###  https://www.w3id.org/simulation/ontology/AllusionSimulation
+:AllusionSimulation rdf:type owl:Class ;
+                    rdfs:subClassOf :Simulation ;
+                    rdfs:comment "A specific kind of simulation in which the simulacrum alludes to the reality counterpart. Is a more subtle symbolic relationship than the normal simulation."@en ;
+                    rdfs:isDefinedBy :SimulationOntology ;
+                    rdfs:label "Allusion Simulation"@en .
+
+
+###  https://www.w3id.org/simulation/ontology/AssociationSimulation
 :AssociationSimulation rdf:type owl:Class ;
-                       rdfs:subClassOf :Simulation .
+                       rdfs:subClassOf :Simulation ;
+                       rdfs:comment "A simulation in which the simulacrum is associated with the reality counterpart. It is a very general relationship and should be used only when the association is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is associated with\" Y."@en ;
+                       rdfs:isDefinedBy :SimulationOntology ;
+                       rdfs:label "Association Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation
+###  https://www.w3id.org/simulation/ontology/AttributeSimulation
 :AttributeSimulation rdf:type owl:Class ;
-                     rdfs:subClassOf :Simulation .
+                     rdfs:subClassOf :Simulation ;
+                     rdfs:comment "A specific kind of simulation in which the simulacrum is a symbolic attribute of the reality counterpart. Like \"keys\" as an attribute of Saint Peter."@en ;
+                     rdfs:isDefinedBy :SimulationOntology ;
+                     rdfs:label "Attribute Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context
+###  https://www.w3id.org/simulation/ontology/Context
 :Context rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
+         rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :isContextOf ;
                            owl:someValuesFrom :Simulation
-                         ] .
+                         ] ;
+         owl:disjointWith :Simulation ,
+                          :Source ;
+         rdfs:comment "The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection."@en ;
+         rdfs:isDefinedBy :SimulationOntology ;
+         rdfs:label "Context"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation
+###  https://www.w3id.org/simulation/ontology/CorrespondenceSimulation
 :CorrespondenceSimulation rdf:type owl:Class ;
-                          rdfs:subClassOf :Simulation .
+                          rdfs:subClassOf :Simulation ;
+                          rdfs:comment "A simulation in which the simulacrum corresponds to the reality counterpart. It is a very general relationship and should be used only when the correspondence is explicitly state by the source. I.E. in a dictionary of symbols it is written that X \"corresponds to\" Y."@en ;
+                          rdfs:isDefinedBy :SimulationOntology ;
+                          rdfs:label "Correspondence Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation
+###  https://www.w3id.org/simulation/ontology/EmblematicSimulation
 :EmblematicSimulation rdf:type owl:Class ;
-                      rdfs:subClassOf :Simulation .
+                      rdfs:subClassOf :Simulation ;
+                      rdfs:comment "A specific kind of simulation in which the simulacrum is an emblem of the reality counterpart. Emblems are usually used as a graphical representation of something."@en ;
+                      rdfs:isDefinedBy :SimulationOntology ;
+                      rdfs:label "Emblematic Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation
+###  https://www.w3id.org/simulation/ontology/HealingSimulation
 :HealingSimulation rdf:type owl:Class ;
                    rdfs:subClassOf :Simulation ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :healedRealityCounterpart ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass :RealityCounterpart
-                                   ] .
+                                   ] ;
+                   owl:hasKey ( :hasSimulacrum
+                                :healedRealityCounterpart
+                              ) ;
+                   rdfs:comment "A specific kind of simulation in which the simulacrum is a symbolic cure for the reality counterpart. The reality counterpart in this kind of simulation is in fact usually something negative like a disease or a curse."@en ;
+                   rdfs:isDefinedBy :SimulationOntology ;
+                   rdfs:label "Healing Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation
+###  https://www.w3id.org/simulation/ontology/ManifestationSimulation
 :ManifestationSimulation rdf:type owl:Class ;
-                         rdfs:subClassOf :Simulation .
+                         rdfs:subClassOf :Simulation ;
+                         rdfs:comment "A simulation in which the simulacrum is a manifestation of the reality counterpart. It is a very general relationship and should be used only when the manifestation is explicitly stated by the source. I.E. in a dictionary of symbols it is written than X \"is a manifestation of\" Y."@en ;
+                         rdfs:isDefinedBy :SimulationOntology ;
+                         rdfs:label "Manifestation Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation
+###  https://www.w3id.org/simulation/ontology/ProtectionSimulation
 :ProtectionSimulation rdf:type owl:Class ;
                       rdfs:subClassOf :Simulation ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty :preventedRealityCounterpart ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                         owl:onClass :RealityCounterpart
-                                      ] .
+                                      ] ;
+                      owl:hasKey ( :hasSimulacrum
+                                   :preventedRealityCounterpart
+                                 ) ;
+                      rdfs:comment "A specific kind of simulation in which the simulacrum is a symbolic protection against the reality counterpart. Like agate as a protection against the evil eye."@en ;
+                      rdfs:isDefinedBy :SimulationOntology ;
+                      rdfs:label "Protection Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart
+###  https://www.w3id.org/simulation/ontology/RealityCounterpart
 :RealityCounterpart rdf:type owl:Class ;
-                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> ,
+                                    <http://www.w3.org/ns/prov#Entity> ,
+                                    [ rdf:type owl:Restriction ;
                                       owl:onProperty :isRealityCounterpartOf ;
                                       owl:someValuesFrom :Simulation
-                                    ] .
+                                    ] ;
+                    owl:disjointWith :Simulation ;
+                    rdfs:comment "A reality counterpart is the symbolic meaning associated to a simulacrum. It's the element that is symbolically referred by the simulacrum in a simulation. The term is taken from Baudrillard's Simulacra and Simulation theory"@en ;
+                    rdfs:isDefinedBy :SimulationOntology ;
+                    rdfs:label "Reality Counterpart"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation
+###  https://www.w3id.org/simulation/ontology/RelatednessSimulation
 :RelatednessSimulation rdf:type owl:Class ;
-                       rdfs:subClassOf :Simulation .
+                       rdfs:subClassOf :Simulation ;
+                       rdfs:comment "A simulation in which the simulacrum is related to the reality counterpart. It is a very general relationship and should be used only when the relatedness is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is related to\" Y."@en ;
+                       rdfs:isDefinedBy :SimulationOntology ;
+                       rdfs:label "Relatedness Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum
+###  https://www.w3id.org/simulation/ontology/Simulacrum
 :Simulacrum rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
+            rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject> ,
+                            <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty :isSimulacrumOf ;
                               owl:someValuesFrom :Simulation
-                            ] .
+                            ] ;
+            rdfs:comment "A simulacrum is something that carries a secondary meaning (the first being its literal meaning), of symbolic nature. i.e. a skull is the set of bones of a head (literal meaning), but it is also the symbol of death (secondary, symbolic meaning). The term is taken from Baudrillard's Simulacra and Simulation theory. The plural of simulacrum is simulacra."@en ;
+            rdfs:isDefinedBy :SimulationOntology ;
+            rdfs:label "Simulacrum"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation
+###  https://www.w3id.org/simulation/ontology/Simulation
 :Simulation rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasRealityCounterpart ;
-                              owl:someValuesFrom :RealityCounterpart
+            rdfs:subClassOf [ owl:intersectionOf ( <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                                   <http://www.w3.org/ns/prov#Entity>
+                                                 ) ;
+                              rdf:type owl:Class
                             ] ,
                             [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasSource ;
+                              owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
                               owl:someValuesFrom :Source
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasContext ;
+                              owl:someValuesFrom :Context
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasRealityCounterpart ;
+                              owl:someValuesFrom :RealityCounterpart
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :hasSimulacrum ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onClass :Simulacrum
-                            ] .
+                            ] ;
+            owl:disjointWith :Source ;
+            owl:hasKey ( :hasRealityCounterpart
+                         :hasSimulacrum
+                       ) ;
+            rdfs:comment "A simulation is the symbolic relationship that happens between a symbol and its symbolic meaning. The term is taken from Baudrillard's Simulacra and Simulation philosophical theory."@en ;
+            rdfs:isDefinedBy :SimulationOntology ;
+            rdfs:label "Simulation"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source
+###  https://www.w3id.org/simulation/ontology/Source
 :Source rdf:type owl:Class ;
-        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                          owl:onProperty :isSourceOf ;
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <https://www.w3.org/ns/prov-o-inverses#hadDerivation> ;
                           owl:someValuesFrom :Simulation
-                        ] .
-
-
-###  http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship
-:SymbolicRelationship rdf:type owl:Class .
+                        ] ;
+        rdfs:comment "This class represents the source of a simulation. It is intended as the entity that acknowledges a simulation as a legitimate symbolic relationship. A source can either be a dictionary of symbols or a knowledge graph in which symbolic information are present."@en ;
+        rdfs:isDefinedBy :SimulationOntology ;
+        rdfs:label "Source"@en .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.w3.org/ns/prov-o
-<http://www.w3.org/ns/prov-o> rdf:type owl:NamedIndividual ;
-                              :elicitedRealityCounterpart <http://www.w3.org/ns/prov#EmptyCollection> .
+###  https://www.w3id.org/simulation/ontology/SimulationOntology
+:SimulationOntology rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

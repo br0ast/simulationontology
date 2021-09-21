@@ -1,6 +1,75 @@
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Author: Bruno Sartini" .
+<https://www.w3id.org/simulation/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/elements/1.1/contributor> "Aldo Gangemi" .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/elements/1.1/contributor> "Marieke van Erp" .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/elements/1.1/creator> "Bruno Sartini" .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/elements/1.1/title> "Simulation Ontology"@en .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/terms/created> "September 13th, 2021"@en .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/terms/issued> "September 13th, 2021"@en .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/dc/terms/publisher> "Bruno Sartini" .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sim"@en .
+<https://www.w3id.org/simulation/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.w3id.org/simulation/ontology/" .
+<https://www.w3id.org/simulation/ontology/> <http://schema.org/citation> "Cite this Ontology as: Sartini, B. The Simulation ontology. https://www.w3id.org/simulation/ontology/ "@en .
+<https://www.w3id.org/simulation/ontology/> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl> .
+<https://www.w3id.org/simulation/ontology/> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl> .
+<https://www.w3id.org/simulation/ontology/> <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl> .
+<https://www.w3id.org/simulation/ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology was designed to conceptualize symbolic meanings following Baudrillard's Simulacra and Simulation theory. Symbols, their meaning, the context in which the symbolic meaning (or simulation) exists and the source of the simulation are linked to a N-ary Simulation Class."@en .
+<https://www.w3id.org/simulation/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Ontology"@en .
+<https://www.w3id.org/simulation/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "1.2 (hasSource property deprecated and replaced by prov:wasDerivedFrom)"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/citation
+<http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/1999/xhtml/vocab#license
+<https://www.w3.org/1999/xhtml/vocab#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/1999/xhtml/vocab#dct:rights
+<https://www.w3.org/1999/xhtml/vocab#dct:rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -10,132 +79,336 @@
 # #################################################################
 # 
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasContext> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context> .
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant> .
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
+# http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3.org/ns/prov-o-inverses#hadDerivation> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity. In the context of the Simulation ontology this property links a Simulation to its source"@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "was derived from" .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source> .
+# https://www.w3.org/ns/prov-o-inverses#hadDerivation
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of wasDerivedFrom" .
+<https://www.w3.org/ns/prov-o-inverses#hadDerivation> <http://www.w3.org/2000/01/rdf-schema#label> "had derivation" .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSymbolicRelationship> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship> .
+# https://www.w3id.org/simulation/ontology/easedRealityCounterpart
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific relationship that links a simulation to a reality counterpart that is symbolically eased by the simulacrum. Like the Onyx, which in Indic-Persian context is believed to symbolically ease childbirth."@en .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/easedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Eased reality counterpart"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+# https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific relationship that links a simulation to a reality counterpart that is symbolically elicited by the simulacrum."@en .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/elicitedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Elicited reality counterpart"@en .
+# 
+# https://www.w3id.org/simulation/ontology/hasContext
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isContextOf> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Context> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Simulation to its context"@en .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasContext> <http://www.w3.org/2000/01/rdf-schema#label> "has Context"@en .
+# 
+# https://www.w3id.org/simulation/ontology/hasPersonifiedVariant
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasVariant> .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasVariant> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used when a variant is intended as the personified variant of the other entity. Like \"Air\" has personified variant \"Air personified\""@en .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasPersonifiedVariant> <http://www.w3.org/2000/01/rdf-schema#label> "Has personified variant"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
+# https://www.w3id.org/simulation/ontology/hasRealityCounterpart
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Simulation to its reality counterpart. More specific relationships between a simulation and its reality counterpart are available as subproperties of this property."@en .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Has reality counterpart"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/hasSimulacrum
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isSimulacrumOf> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a simulation to its simulacrum."@en .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasSimulacrum> <http://www.w3.org/2000/01/rdf-schema#label> "Has simulacrum"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
+# https://www.w3id.org/simulation/ontology/hasSource
+<https://www.w3id.org/simulation/ontology/hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasSource> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Simulation with its source"@en .
+<https://www.w3id.org/simulation/ontology/hasSource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasSource> <http://www.w3.org/2000/01/rdf-schema#label> "Has source"@en .
+<https://www.w3id.org/simulation/ontology/hasSource> <http://www.w3.org/2002/07/owl#deprecated> "deprecated on the 1.2 version" .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
+# https://www.w3id.org/simulation/ontology/hasVariant
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isVariantOf> .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a simulacrum or a reality counterpart to a variant of theirs. A variant is intended as a narrower concept than one of those two elements. It is also used to define a set of elements in relation to a single element that is part of that set. I.e. \"man and woman\" is a variant of \"woman\", \"golden apple\" is a variant of \"apple\"."@en .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/hasVariant> <http://www.w3.org/2000/01/rdf-schema#label> "has variant"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
+# https://www.w3id.org/simulation/ontology/healedRealityCounterpart
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/HealingSimulation> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific relationship that links a simulation (usually a Healing Simulation) to a reality counterpart of which a simulacrum is the symbolic cure."@en .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/healedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Healed reality counterpart"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
+# https://www.w3id.org/simulation/ontology/isContextOf
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Context> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of has context"@en .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isContextOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is context of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of eased reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isEasedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is eased reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
+# https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of elicited reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isElicitedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is elicited reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/HealingSimulation> .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of healed reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isHealedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is healed reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wasDerivedFrom> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isVariantOf> .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has personified variant"@en .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isPersonifiedVariantOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is personified variant of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSymbolicRelationshipOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/ProtectionSimulation> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversed property of prevented reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isPreventedRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is prevented reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
+# https://www.w3id.org/simulation/ontology/isRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversed property of has reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
+# https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of restored reality counterpart"@en .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isRestoredRealityCounterpartOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is restored reality counterpart of"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
+# https://www.w3id.org/simulation/ontology/isSimulacrumOf
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversed property of has simulacrum"@en .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isSimulacrumOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is simulacrum of"@en .
+# 
+# https://www.w3id.org/simulation/ontology/isSourceOf
+<https://www.w3id.org/simulation/ontology/isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has source"@en .
+<https://www.w3id.org/simulation/ontology/isSourceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isSourceOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is source of"@en .
+<https://www.w3id.org/simulation/ontology/isSourceOf> <http://www.w3.org/2002/07/owl#deprecated> "deprecated on the 1.2 version" .
+# 
+# https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#isDenotedBy> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://www.w3id.org/simulation/ontology/symbolicMeaning> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of symbolic meaning"@en .
+<https://www.w3id.org/simulation/ontology/isSymbolicMeaningOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is symbolic meaning of"@en .
+# 
+# https://www.w3id.org/simulation/ontology/isVariantOf
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse property of has variant"@en .
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/isVariantOf> <http://www.w3.org/2000/01/rdf-schema#label> "Is variant of"@en .
+# 
+# https://www.w3id.org/simulation/ontology/preventedRealityCounterpart
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/ProtectionSimulation> .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific relationship that links a simulation (usually a Protection Simulation) to a reality counterpart that is symbolically prevented by the simulacrum."@en .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Prevented reality counterpart"@en .
+# 
+# https://www.w3id.org/simulation/ontology/restoredRealityCounterpart
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific relationship that links a simulation to a reality counterpart that is symbolically restored by the simulacrum. Like the red valerian (simulacrum), which, in flower language, is symbolically believed to restore strenght (restored reality counterpart)."@en .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/restoredRealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Restored reality counterpart"@en .
+# 
+# https://www.w3id.org/simulation/ontology/symbolicMeaning
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/isSimulacrumOf> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is a chain property that links a simulacrum with its reality counterpart. This direct relationship does not consider neither the context or the source of the simulation"@en .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/symbolicMeaning> <http://www.w3.org/2000/01/rdf-schema#label> "Symbolic Meaning"@en .
 # 
 # 
 # 
@@ -146,94 +419,197 @@ _:genid7 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wa
 # #################################################################
 # 
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AssociationSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject
+<http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#AttributeSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isContextOf> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#CorrespondenceSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#EmblematicSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#healedRealityCounterpart> .
-_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
+# https://www.w3id.org/simulation/ontology/AllusionSimulation
+<https://www.w3id.org/simulation/ontology/AllusionSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/AllusionSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/AllusionSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific kind of simulation in which the simulacrum alludes to the reality counterpart. Is a more subtle symbolic relationship than the normal simulation."@en .
+<https://www.w3id.org/simulation/ontology/AllusionSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/AllusionSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Allusion Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ManifestationSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/AssociationSimulation
+<https://www.w3id.org/simulation/ontology/AssociationSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/AssociationSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/AssociationSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation in which the simulacrum is associated with the reality counterpart. It is a very general relationship and should be used only when the association is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is associated with\" Y."@en .
+<https://www.w3id.org/simulation/ontology/AssociationSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/AssociationSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Association Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#preventedRealityCounterpart> .
-_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
+# https://www.w3id.org/simulation/ontology/AttributeSimulation
+<https://www.w3id.org/simulation/ontology/AttributeSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/AttributeSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/AttributeSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific kind of simulation in which the simulacrum is a symbolic attribute of the reality counterpart. Like \"keys\" as an attribute of Saint Peter."@en .
+<https://www.w3id.org/simulation/ontology/AttributeSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/AttributeSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isRealityCounterpartOf> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/Context
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/isContextOf> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/simulation/ontology/Source> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2000/01/rdf-schema#comment> "The context is the setting (either social, historical, cultural etc...) in which a Simulation exists. An ash tree, in the Norse context is a symbol of Odin. On the other hand, a tree in a Celtic context is a symbol of connection."@en .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RelatednessSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/CorrespondenceSimulation
+<https://www.w3id.org/simulation/ontology/CorrespondenceSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/CorrespondenceSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/CorrespondenceSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation in which the simulacrum corresponds to the reality counterpart. It is a very general relationship and should be used only when the correspondence is explicitly state by the source. I.E. in a dictionary of symbols it is written that X \"corresponds to\" Y."@en .
+<https://www.w3id.org/simulation/ontology/CorrespondenceSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/CorrespondenceSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Correspondence Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSimulacrumOf> .
-_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/EmblematicSimulation
+<https://www.w3id.org/simulation/ontology/EmblematicSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/EmblematicSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/EmblematicSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific kind of simulation in which the simulacrum is an emblem of the reality counterpart. Emblems are usually used as a graphical representation of something."@en .
+<https://www.w3id.org/simulation/ontology/EmblematicSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/EmblematicSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Emblematic Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasRealityCounterpart> .
-_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#RealityCounterpart> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSource> .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#hasSimulacrum> .
-_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulacrum> .
+# https://www.w3id.org/simulation/ontology/HealingSimulation
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/healedRealityCounterpart> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2002/07/owl#hasKey> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/hasSimulacrum> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/healedRealityCounterpart> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific kind of simulation in which the simulacrum is a symbolic cure for the reality counterpart. The reality counterpart in this kind of simulation is in fact usually something negative like a disease or a curse."@en .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/HealingSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Healing Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#isSourceOf> .
-_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#Simulation> .
+# https://www.w3id.org/simulation/ontology/ManifestationSimulation
+<https://www.w3id.org/simulation/ontology/ManifestationSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/ManifestationSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/ManifestationSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation in which the simulacrum is a manifestation of the reality counterpart. It is a very general relationship and should be used only when the manifestation is explicitly stated by the source. I.E. in a dictionary of symbols it is written than X \"is a manifestation of\" Y."@en .
+<https://www.w3id.org/simulation/ontology/ManifestationSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/ManifestationSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestation Simulation"@en .
 # 
-# http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship
-<http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#SymbolicRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# https://www.w3id.org/simulation/ontology/ProtectionSimulation
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2002/07/owl#hasKey> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/hasSimulacrum> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/preventedRealityCounterpart> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific kind of simulation in which the simulacrum is a symbolic protection against the reality counterpart. Like agate as a protection against the evil eye."@en .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/ProtectionSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Protection Simulation"@en .
+# 
+# https://www.w3id.org/simulation/ontology/RealityCounterpart
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Reference> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/isRealityCounterpartOf> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#comment> "A reality counterpart is the symbolic meaning associated to a simulacrum. It's the element that is symbolically referred by the simulacrum in a simulation. The term is taken from Baudrillard's Simulacra and Simulation theory"@en .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/RealityCounterpart> <http://www.w3.org/2000/01/rdf-schema#label> "Reality Counterpart"@en .
+# 
+# https://www.w3id.org/simulation/ontology/RelatednessSimulation
+<https://www.w3id.org/simulation/ontology/RelatednessSimulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/RelatednessSimulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/RelatednessSimulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation in which the simulacrum is related to the reality counterpart. It is a very general relationship and should be used only when the relatedness is explicitly stated by the source. I.E. in a dictionary of symbols it is written that X \"is related to\" Y."@en .
+<https://www.w3id.org/simulation/ontology/RelatednessSimulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/RelatednessSimulation> <http://www.w3.org/2000/01/rdf-schema#label> "Relatedness Simulation"@en .
+# 
+# https://www.w3id.org/simulation/ontology/Simulacrum
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject> .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/isSimulacrumOf> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulacrum is something that carries a secondary meaning (the first being its literal meaning), of symbolic nature. i.e. a skull is the set of bones of a head (literal meaning), but it is also the symbol of death (secondary, symbolic meaning). The term is taken from Baudrillard's Simulacra and Simulation theory. The plural of simulacrum is simulacra."@en .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/Simulacrum> <http://www.w3.org/2000/01/rdf-schema#label> "Simulacrum"@en .
+# 
+# https://www.w3id.org/simulation/ontology/Simulation
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Entity> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Source> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/hasContext> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Context> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/RealityCounterpart> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/simulation/ontology/hasSimulacrum> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/simulation/ontology/Simulacrum> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/simulation/ontology/Source> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2002/07/owl#hasKey> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/hasRealityCounterpart> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/simulation/ontology/hasSimulacrum> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation is the symbolic relationship that happens between a symbol and its symbolic meaning. The term is taken from Baudrillard's Simulacra and Simulation philosophical theory."@en .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/Simulation> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation"@en .
+# 
+# https://www.w3id.org/simulation/ontology/Source
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3.org/ns/prov-o-inverses#hadDerivation> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/simulation/ontology/Simulation> .
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the source of a simulation. It is intended as the entity that acknowledges a simulation as a legitimate symbolic relationship. A source can either be a dictionary of symbols or a knowledge graph in which symbolic information are present."@en .
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3id.org/simulation/ontology/SimulationOntology> .
+<https://www.w3id.org/simulation/ontology/Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
 # 
 # 
 # 
@@ -244,8 +620,7 @@ _:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # #################################################################
 # 
 # 
-# http://www.w3.org/ns/prov-o
-<http://www.w3.org/ns/prov-o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/prov-o> <http://www.semanticweb.org/bruno/ontologies/2021/3/simulationontology#elicitedRealityCounterpart> <http://www.w3.org/ns/prov#EmptyCollection> .
+# https://www.w3id.org/simulation/ontology/SimulationOntology
+<https://www.w3id.org/simulation/ontology/SimulationOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
