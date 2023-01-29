@@ -1,0 +1,1730 @@
+@prefix kb: <https://w3id.org/simulation/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+kb:artistic a skos:Collection ;
+    rdfs:label "Artistic" ;
+    skos:member kb:art,
+        kb:christianArt,
+        kb:europeanMedievalArt,
+        kb:funeralArt,
+        kb:heraldic,
+        kb:heraldry,
+        kb:portraiture,
+        kb:renaissanceArt,
+        kb:stillLife,
+        kb:stillLifePainting .
+
+kb:communication a skos:Collection ;
+    rdfs:label "Communication" ;
+    skos:member kb:flowerLanguage,
+        kb:telegraphic .
+
+kb:cultural a skos:Collection ;
+    rdfs:label "Cultural" ;
+    skos:member kb:astrologic,
+        kb:astrological,
+        kb:gothic,
+        kb:greekMythology,
+        kb:heraldic,
+        kb:heraldry,
+        kb:hyperborean,
+        kb:lordOfTheFlies,
+        kb:marriage,
+        kb:medieval,
+        kb:middleAges,
+        kb:renaissance,
+        kb:rosicrucian,
+        kb:sanskrit,
+        kb:zen,
+        kb:zodiac,
+        kb:zodiacal .
+
+kb:culturalesoteric a skos:Collection ;
+    rdfs:label "CulturalEsoteric" ;
+    skos:member kb:alchemic,
+        kb:cartomancy,
+        kb:druidic,
+        kb:kabalistic,
+        kb:tarot,
+        kb:voodoo,
+        kb:witchcraft .
+
+kb:folkloristic a skos:Collection ;
+    rdfs:label "Folkloristic" ;
+    skos:member kb:europeanFolklore,
+        kb:folkloric .
+
+kb:general a skos:Collection ;
+    rdfs:label "General" ;
+    skos:member kb:ancientTimes,
+        kb:birthday,
+        kb:generalOrUnknown,
+        kb:horizontalAxis,
+        kb:modern .
+
+kb:geoSocioCultural a skos:Collection ;
+    rdfs:label "Geo-socio-cultural" ;
+    skos:member kb:afghani,
+        kb:african,
+        kb:ainu,
+        kb:akkadian,
+        kb:algonquin,
+        kb:alur,
+        kb:american,
+        kb:amerindian,
+        kb:ammonite,
+        kb:anatolian,
+        kb:ancientRome,
+        kb:angloSaxon,
+        kb:apache,
+        kb:arabian,
+        kb:arabianPreIslamic,
+        kb:armenian,
+        kb:ashanti,
+        kb:asian,
+        kb:assyrian,
+        kb:australianAboriginal,
+        kb:aymaran,
+        kb:aztecMexican,
+        kb:aztecan,
+        kb:babylonian,
+        kb:bagandan,
+        kb:baltic,
+        kb:bambaran,
+        kb:bantu,
+        kb:baul,
+        kb:bedouin,
+        kb:berber,
+        kb:blackfoot,
+        kb:breton,
+        kb:britainAncient,
+        kb:british,
+        kb:burmese,
+        kb:bushmen,
+        kb:byzantine,
+        kb:cakchiquel,
+        kb:cambodian,
+        kb:canaanite,
+        kb:carthaginian,
+        kb:celtic,
+        kb:centralAfrican,
+        kb:centralAmericanIndian,
+        kb:chaldean,
+        kb:chickasaw,
+        kb:chinese,
+        kb:congolese,
+        kb:cornish,
+        kb:dahomean,
+        kb:danish,
+        kb:denmark,
+        kb:dogon,
+        kb:egypt,
+        kb:egyptian,
+        kb:english,
+        kb:englishMedieval,
+        kb:eskimo,
+        kb:estonian,
+        kb:ethiopian,
+        kb:etruscan,
+        kb:european,
+        kb:farEastern,
+        kb:finnish,
+        kb:finnoUrgic,
+        kb:formosan,
+        kb:france,
+        kb:french,
+        kb:frisian,
+        kb:fulani,
+        kb:gaelic,
+        kb:gallic,
+        kb:german,
+        kb:germanic,
+        kb:grecoRoman,
+        kb:greece,
+        kb:greek,
+        kb:gurani,
+        kb:haitian,
+        kb:hawaiian,
+        kb:hindu,
+        kb:hittite,
+        kb:hmong,
+        kb:hopi,
+        kb:hungarian,
+        kb:icelandic,
+        kb:incan,
+        kb:indic,
+        kb:indonesian,
+        kb:inuit,
+        kb:iranian,
+        kb:irish,
+        kb:italian,
+        kb:ivorian,
+        kb:japanese,
+        kb:javanese,
+        kb:kalmyk,
+        kb:kenyan,
+        kb:khoikhoi,
+        kb:khoisan,
+        kb:korean,
+        kb:kwakiutl,
+        kb:laotian,
+        kb:latinAmerican,
+        kb:latvian,
+        kb:liloet,
+        kb:lithuanian,
+        kb:macedonian,
+        kb:machican,
+        kb:makah,
+        kb:malian,
+        kb:mandan,
+        kb:manipuri,
+        kb:maori,
+        kb:maya,
+        kb:mayan,
+        kb:mediterranean,
+        kb:melanesian,
+        kb:mesopotamian,
+        kb:mexicanIndian,
+        kb:middleEast,
+        kb:middleEastern,
+        kb:minoan,
+        kb:mochican,
+        kb:mongolian,
+        kb:montagnard,
+        kb:nahua,
+        kb:nahuan,
+        kb:navajo,
+        kb:nearEast,
+        kb:nepalese,
+        kb:newCaledonian,
+        kb:nootkan,
+        kb:norman,
+        kb:norse,
+        kb:northAmericanIndian,
+        kb:norwegian,
+        kb:occidental,
+        kb:oceanic,
+        kb:orient,
+        kb:oriental,
+        kb:panche,
+        kb:parsi,
+        kb:pawnee,
+        kb:persian,
+        kb:peruvianIndian,
+        kb:philippine,
+        kb:phoenician,
+        kb:phrygian,
+        kb:polish,
+        kb:polynesian,
+        kb:pueblo,
+        kb:pygmy,
+        kb:quechuan,
+        kb:roman,
+        kb:romanian,
+        kb:russian,
+        kb:salteaux,
+        kb:samian,
+        kb:samoan,
+        kb:scandinavian,
+        kb:scottish,
+        kb:semang,
+        kb:semitic,
+        kb:serbian,
+        kb:siberian,
+        kb:siouan,
+        kb:slavic,
+        kb:solomonIsland,
+        kb:southAmericanIndian,
+        kb:southeastAsian,
+        kb:southeasternAsian,
+        kb:spanish,
+        kb:sriLankan,
+        kb:sumerian,
+        kb:sumeroAkkadian,
+        kb:sumeroSemitic,
+        kb:susun,
+        kb:swiss,
+        kb:syrian,
+        kb:tahitian,
+        kb:tano,
+        kb:teutonic,
+        kb:tewa,
+        kb:thai,
+        kb:tibetan,
+        kb:tinguinian,
+        kb:tlingit,
+        kb:toltec,
+        kb:tongan,
+        kb:tuareg,
+        kb:tungun,
+        kb:tupiGuarani,
+        kb:tupinamba,
+        kb:turkic,
+        kb:turkish,
+        kb:tutsi,
+        kb:uralAltaic,
+        kb:urartian,
+        kb:vietnamese,
+        kb:welsh,
+        kb:westAfrican,
+        kb:yoruban,
+        kb:zairean,
+        kb:zulu,
+        kb:zuni .
+
+kb:philosophical a skos:Collection ;
+    rdfs:label "Philosophical" ;
+    skos:member kb:aristotelian,
+        kb:hermetic,
+        kb:neoPlatonic,
+        kb:neoPlatonism,
+        kb:platonic,
+        kb:pythagorean .
+
+kb:recurrenttemporal a skos:Collection ;
+    rdfs:label "RecurrentTemporal" ;
+    skos:member kb:friday,
+        kb:monday,
+        kb:sunday,
+        kb:thursday,
+        kb:tuesday,
+        kb:wednesday .
+
+kb:religious a skos:Collection ;
+    rdfs:label "Religious" ;
+    skos:member kb:alusi,
+        kb:anglican,
+        kb:anglicanism,
+        kb:bahaI,
+        kb:benedictine,
+        kb:biblical,
+        kb:bon,
+        kb:buddhism,
+        kb:buddhist,
+        kb:buddhistTantric,
+        kb:catharistic,
+        kb:catholic,
+        kb:christian,
+        kb:christianArt,
+        kb:christianScience,
+        kb:confucian,
+        kb:coptic,
+        kb:easternOrthodox,
+        kb:essene,
+        kb:gnostic,
+        kb:gospelOfBarnabas,
+        kb:hinduVedic,
+        kb:immersionOrRitualImmersionBaptism,
+        kb:iroquoian,
+        kb:islam,
+        kb:islamic,
+        kb:islamicDervish,
+        kb:jain,
+        kb:jainism,
+        kb:jehovahSWitnesses,
+        kb:jewish,
+        kb:judaism,
+        kb:mandaean,
+        kb:manichaean,
+        kb:manichean,
+        kb:mithraic,
+        kb:neopagan,
+        kb:newTestament,
+        kb:oldTestament,
+        kb:orphic,
+        kb:shinto,
+        kb:shintoist,
+        kb:sikh,
+        kb:taoist,
+        kb:zoroastrian,
+        kb:zoroastrianism .
+
+kb:scientific a skos:Collection ;
+    rdfs:label "Scientific" ;
+    skos:member kb:alchemic,
+        kb:christianScience .
+
+kb:seasonal a skos:Collection ;
+    rdfs:label "Seasonal" ;
+    skos:member kb:inTheAutumn .
+
+kb:social a skos:Collection ;
+    rdfs:label "Social" ;
+    skos:member kb:academic,
+        kb:law,
+        kb:marriage,
+        kb:masonic,
+        kb:modernUrbanUse,
+        kb:pastoralSocieties,
+        kb:privateUniversity,
+        kb:psychological,
+        kb:rosicrucian,
+        kb:sportsAndRecreation .
+
+kb:temporal a skos:Collection ;
+    rdfs:label "Temporal" ;
+    skos:member kb:antiquity .
+
+kb:academic a skos:Concept ;
+    rdfs:label "Academic" .
+
+kb:alusi a skos:Concept ;
+    rdfs:label "Alusi" .
+
+kb:ancientRome a skos:Concept ;
+    rdfs:label "ancient Rome" .
+
+kb:ancientTimes a skos:Concept ;
+    rdfs:label "ancient times" .
+
+kb:antiquity a skos:Concept ;
+    rdfs:label "antiquity" .
+
+kb:arabianPreIslamic a skos:Concept ;
+    rdfs:label "Arabian (pre-Islamic)" .
+
+kb:aristotelian a skos:Concept ;
+    rdfs:label "Aristotelian" .
+
+kb:art a skos:Concept ;
+    rdfs:label "art" .
+
+kb:assyrian a skos:Concept ;
+    rdfs:label "Assyrian" .
+
+kb:astrologic a skos:Concept ;
+    rdfs:label "astrologic" .
+
+kb:aztecMexican a skos:Concept ;
+    rdfs:label "Aztec/Mexican" .
+
+kb:babylonian a skos:Concept ;
+    rdfs:label "Babylonian" .
+
+kb:bahaI a skos:Concept ;
+    rdfs:label "Baha’i" .
+
+kb:bedouin a skos:Concept ;
+    rdfs:label "Bedouin" .
+
+kb:benedictine a skos:Concept ;
+    rdfs:label "Benedictine" .
+
+kb:birthday a skos:Concept ;
+    rdfs:label "birthday" .
+
+kb:bon a skos:Concept ;
+    rdfs:label "Bon" .
+
+kb:breton a skos:Concept ;
+    rdfs:label "Breton" .
+
+kb:britainAncient a skos:Concept ;
+    rdfs:label "Britain (ancient)" .
+
+kb:buddhism a skos:Concept ;
+    rdfs:label "Buddhism" .
+
+kb:carthaginian a skos:Concept ;
+    rdfs:label "Carthaginian" .
+
+kb:cartomancy a skos:Concept ;
+    rdfs:label "cartomancy" .
+
+kb:catholic a skos:Concept ;
+    rdfs:label "Catholic" .
+
+kb:celtic a skos:Concept ;
+    rdfs:label "Celtic" .
+
+kb:centralAmericanIndian a skos:Concept ;
+    rdfs:label "Central American Indian" .
+
+kb:chaldean a skos:Concept ;
+    rdfs:label "Chaldean" .
+
+kb:confucian a skos:Concept ;
+    rdfs:label "Confucian" .
+
+kb:druidic a skos:Concept ;
+    rdfs:label "Druidic" .
+
+kb:etruscan a skos:Concept ;
+    rdfs:label "Etruscan" .
+
+kb:farEastern a skos:Concept ;
+    rdfs:label "Far Eastern" .
+
+kb:finnoUrgic a skos:Concept ;
+    rdfs:label "Finno-Urgic" .
+
+kb:flowerLanguage a skos:Concept ;
+    rdfs:label "flower language" .
+
+kb:folkloric a skos:Concept ;
+    rdfs:label "folkloric" .
+
+kb:friday a skos:Concept ;
+    rdfs:label "Friday" .
+
+kb:funeralArt a skos:Concept ;
+    rdfs:label "funeral art" .
+
+kb:generalOrUnknown a skos:Concept ;
+    rdfs:label "General or Unknown" .
+
+kb:gnostic a skos:Concept ;
+    rdfs:label "Gnostic" .
+
+kb:gothic a skos:Concept ;
+    rdfs:label "Gothic" .
+
+kb:hermetic a skos:Concept ;
+    rdfs:label "Hermetic" .
+
+kb:horizontalAxis a skos:Concept ;
+    rdfs:label "horizontal axis" .
+
+kb:inTheAutumn a skos:Concept ;
+    rdfs:label "in the Autumn" .
+
+kb:iroquoian a skos:Concept ;
+    rdfs:label "Iroquoian" .
+
+kb:islam a skos:Concept ;
+    rdfs:label "Islam" .
+
+kb:jain a skos:Concept ;
+    rdfs:label "Jain" .
+
+kb:jainism a skos:Concept ;
+    rdfs:label "Jainism" .
+
+kb:judaism a skos:Concept ;
+    rdfs:label "Judaism" .
+
+kb:kabalistic a skos:Concept ;
+    rdfs:label "Kabalistic",
+        "kabalistic" .
+
+kb:law a skos:Concept ;
+    rdfs:label "Law",
+        "law" .
+
+kb:liloet a skos:Concept ;
+    rdfs:label "Liloet" .
+
+kb:lordOfTheFlies a skos:Concept ;
+    rdfs:label "Lord of the Flies" .
+
+kb:mandaean a skos:Concept ;
+    rdfs:label "Mandaean" .
+
+kb:manichaean a skos:Concept ;
+    rdfs:label "Manichaean" .
+
+kb:manichean a skos:Concept ;
+    rdfs:label "Manichean" .
+
+kb:masonic a skos:Concept ;
+    rdfs:label "Masonic" .
+
+kb:mediterranean a skos:Concept ;
+    rdfs:label "Mediterranean" .
+
+kb:mesopotamian a skos:Concept ;
+    rdfs:label "Mesopotamian" .
+
+kb:mexican skos:narrower kb:nahuan .
+
+kb:middleEastern a skos:Concept ;
+    rdfs:label "Middle Eastern" .
+
+kb:mithraic a skos:Concept ;
+    rdfs:label "Mithraic" .
+
+kb:modern a skos:Concept ;
+    rdfs:label "modern" .
+
+kb:modernUrbanUse a skos:Concept ;
+    rdfs:label "modern urban use" .
+
+kb:monday a skos:Concept ;
+    rdfs:label "Monday" .
+
+kb:nearEast a skos:Concept ;
+    rdfs:label "Near East" .
+
+kb:norman a skos:Concept ;
+    rdfs:label "Norman" .
+
+kb:occidental a skos:Concept ;
+    rdfs:label "Occidental" .
+
+kb:orient a skos:Concept ;
+    rdfs:label "Orient" .
+
+kb:oriental a skos:Concept ;
+    rdfs:label "Oriental" .
+
+kb:orphic a skos:Concept ;
+    rdfs:label "Orphic" .
+
+kb:orthodox skos:narrower kb:easternOrthodox .
+
+kb:pastoralSocieties a skos:Concept ;
+    rdfs:label "pastoral societies" .
+
+kb:phoenician a skos:Concept ;
+    rdfs:label "Phoenician" .
+
+kb:platonism skos:narrower kb:neoPlatonism .
+
+kb:portraiture a skos:Concept ;
+    rdfs:label "portraiture" .
+
+kb:privateUniversity a skos:Concept ;
+    rdfs:label "Private university" .
+
+kb:psychological a skos:Concept ;
+    rdfs:label "psychological" .
+
+kb:pythagorean a skos:Concept ;
+    rdfs:label "Pythagorean" .
+
+kb:reinassance skos:narrower kb:renaissanceArt .
+
+kb:renaissance a skos:Concept ;
+    rdfs:label "renaissance" .
+
+kb:shintoist a skos:Concept ;
+    rdfs:label "Shintoist" .
+
+kb:sikh a skos:Concept ;
+    rdfs:label "Sikh" .
+
+kb:slavic a skos:Concept ;
+    rdfs:label "Slavic" .
+
+kb:solomonIsland a skos:Concept ;
+    rdfs:label "Solomon Island" .
+
+kb:sportsAndRecreation a skos:Concept ;
+    rdfs:label "Sports and Recreation" .
+
+kb:stillLife a skos:Concept ;
+    rdfs:label "still life" .
+
+kb:stillLifePainting a skos:Concept ;
+    rdfs:label "still life painting" .
+
+kb:sunday a skos:Concept ;
+    rdfs:label "Sunday" .
+
+kb:tano a skos:Concept ;
+    rdfs:label "Taíno" .
+
+kb:tanzanian skos:narrower kb:susun .
+
+kb:taoist a skos:Concept ;
+    rdfs:label "Taoist" .
+
+kb:tarot a skos:Concept ;
+    rdfs:label "tarot" .
+
+kb:telegraphic a skos:Concept ;
+    rdfs:label "telegraphic" .
+
+kb:thursday a skos:Concept ;
+    rdfs:label "Thursday" .
+
+kb:tongan a skos:Concept ;
+    rdfs:label "Tongan" .
+
+kb:tuesday a skos:Concept ;
+    rdfs:label "Tuesday" .
+
+kb:turkic a skos:Concept ;
+    rdfs:label "Turkic" .
+
+kb:uralAltaic a skos:Concept ;
+    rdfs:label "Ural-Altaic" .
+
+kb:voodoo a skos:Concept ;
+    rdfs:label "Voodoo" .
+
+kb:wednesday a skos:Concept ;
+    rdfs:label "Wednesday" .
+
+kb:welsh a skos:Concept ;
+    rdfs:label "Welsh" .
+
+kb:witchcraft a skos:Concept ;
+    rdfs:label "witchcraft" .
+
+kb:zen a skos:Concept ;
+    rdfs:label "Zen" .
+
+kb:zodiacal a skos:Concept ;
+    rdfs:label "zodiacal" .
+
+kb:afghani a skos:Concept ;
+    rdfs:label "Afghani" ;
+    skos:broader kb:asian .
+
+kb:akkadian a skos:Concept ;
+    rdfs:label "Akkadian" ;
+    skos:broader kb:eurasian .
+
+kb:alchemic a skos:Concept ;
+    rdfs:label "alchemic" .
+
+kb:algonquin a skos:Concept ;
+    rdfs:label "Algonquin" ;
+    skos:broader kb:northAmerican .
+
+kb:alur a skos:Concept ;
+    rdfs:label "Alur" ;
+    skos:broader kb:african .
+
+kb:amerindian a skos:Concept ;
+    rdfs:label "Amerindian" ;
+    skos:broader kb:american .
+
+kb:ammonite a skos:Concept ;
+    rdfs:label "Ammonite" ;
+    skos:broader kb:eurasian .
+
+kb:anatolian a skos:Concept ;
+    rdfs:label "Anatolian" ;
+    skos:broader kb:asian .
+
+kb:anglican a skos:Concept ;
+    rdfs:label "Anglican" ;
+    skos:broader kb:christian .
+
+kb:anglicanism a skos:Concept ;
+    rdfs:label "Anglicanism" ;
+    skos:broader kb:christian .
+
+kb:angloSaxon a skos:Concept ;
+    rdfs:label "Anglo-Saxon" ;
+    skos:broader kb:english .
+
+kb:apache a skos:Concept ;
+    rdfs:label "Apache" ;
+    skos:broader kb:american .
+
+kb:arabian a skos:Concept ;
+    rdfs:label "Arabian" ;
+    skos:broader kb:asian .
+
+kb:armenian a skos:Concept ;
+    rdfs:label "Armenian" ;
+    skos:broader kb:european .
+
+kb:ashanti a skos:Concept ;
+    rdfs:label "Ashanti" ;
+    skos:broader kb:african .
+
+kb:astrological a skos:Concept ;
+    rdfs:label "astrological" ;
+    skos:narrower kb:zodiac .
+
+kb:australianAboriginal a skos:Concept ;
+    rdfs:label "Australian aboriginal" ;
+    skos:broader kb:oceanic .
+
+kb:aymaran a skos:Concept ;
+    rdfs:label "Aymaran" ;
+    skos:broader kb:southAmericanIndian .
+
+kb:aztecan a skos:Concept ;
+    rdfs:label "Aztecan" ;
+    skos:broader kb:northAmerican .
+
+kb:bagandan a skos:Concept ;
+    rdfs:label "Bagandan" ;
+    skos:broader kb:african .
+
+kb:baltic a skos:Concept ;
+    rdfs:label "Baltic" ;
+    skos:broader kb:southAmerican .
+
+kb:bambaran a skos:Concept ;
+    rdfs:label "Bambaran" ;
+    skos:related kb:african .
+
+kb:bantu a skos:Concept ;
+    rdfs:label "Bantu" ;
+    skos:broader kb:african .
+
+kb:baul a skos:Concept ;
+    rdfs:label "Baulé" ;
+    skos:broader kb:african .
+
+kb:berber a skos:Concept ;
+    rdfs:label "Berber" ;
+    skos:broader kb:african .
+
+kb:biblical a skos:Concept ;
+    rdfs:label "biblical" ;
+    skos:broader kb:christian .
+
+kb:blackfoot a skos:Concept ;
+    rdfs:label "Blackfoot" ;
+    skos:broader kb:northAmericanIndian .
+
+kb:british a skos:Concept ;
+    rdfs:label "British" ;
+    skos:broader kb:english .
+
+kb:buddhist a skos:Concept ;
+    rdfs:label "Buddhist" ;
+    skos:narrower kb:buddhistTantric .
+
+kb:buddhistTantric a skos:Concept ;
+    rdfs:label "Buddhist (Tantric)" ;
+    skos:broader kb:buddhist .
+
+kb:burmese a skos:Concept ;
+    rdfs:label "Burmese" ;
+    skos:broader kb:asian .
+
+kb:bushmen a skos:Concept ;
+    rdfs:label "Bushmen" ;
+    skos:broader kb:african .
+
+kb:cakchiquel a skos:Concept ;
+    rdfs:label "Cakchiquel" ;
+    skos:broader kb:american .
+
+kb:cambodian a skos:Concept ;
+    rdfs:label "Cambodian" ;
+    skos:broader kb:asian .
+
+kb:canaanite a skos:Concept ;
+    rdfs:label "Canaanite" ;
+    skos:broader kb:eurasian .
+
+kb:catharistic a skos:Concept ;
+    rdfs:label "Catharistic" ;
+    skos:broader kb:christian .
+
+kb:centralAfrican a skos:Concept ;
+    rdfs:label "Central African" ;
+    skos:broader kb:african .
+
+kb:chickasaw a skos:Concept ;
+    rdfs:label "Chickasaw" ;
+    skos:broader kb:northAmericanIndian .
+
+kb:congolese a skos:Concept ;
+    rdfs:label "Congolese" ;
+    skos:broader kb:african .
+
+kb:coptic a skos:Concept ;
+    rdfs:label "Coptic" ;
+    skos:broader kb:christian .
+
+kb:cornish a skos:Concept ;
+    rdfs:label "Cornish" ;
+    skos:broader kb:english .
+
+kb:dahomean a skos:Concept ;
+    rdfs:label "Dahomean" ;
+    skos:broader kb:african .
+
+kb:danish a skos:Concept ;
+    rdfs:label "Danish" ;
+    skos:broader kb:european .
+
+kb:denmark a skos:Concept ;
+    rdfs:label "Denmark" ;
+    skos:broader kb:scandinavian .
+
+kb:dogon a skos:Concept ;
+    rdfs:label "Dogon" ;
+    skos:broader kb:african .
+
+kb:easternOrthodox a skos:Concept ;
+    rdfs:label "Eastern Orthodox" ;
+    skos:broader kb:orthodox .
+
+kb:egypt a skos:Concept ;
+    rdfs:label "Egypt" ;
+    skos:broader kb:african .
+
+kb:egyptian a skos:Concept ;
+    rdfs:label "Egyptian" ;
+    skos:broader kb:african .
+
+kb:englishMedieval a skos:Concept ;
+    rdfs:label "English (Medieval)" ;
+    skos:related kb:english .
+
+kb:eskimo a skos:Concept ;
+    rdfs:label "Eskimo" ;
+    skos:broader kb:northAmerican .
+
+kb:essene a skos:Concept ;
+    rdfs:label "Essene" ;
+    skos:broader kb:jewish .
+
+kb:estonian a skos:Concept ;
+    rdfs:label "Estonian" ;
+    skos:broader kb:european .
+
+kb:ethiopian a skos:Concept ;
+    rdfs:label "Ethiopian" ;
+    skos:broader kb:african .
+
+kb:europeanFolklore a skos:Concept ;
+    rdfs:label "European folklore" ;
+    skos:broader kb:european .
+
+kb:europeanMedievalArt a skos:Concept ;
+    rdfs:label "European medieval art" ;
+    skos:broader kb:european .
+
+kb:finnish a skos:Concept ;
+    rdfs:label "Finnish" ;
+    skos:broader kb:scandinavian .
+
+kb:formosan a skos:Concept ;
+    rdfs:label "Formosan" ;
+    skos:broader kb:asian .
+
+kb:france a skos:Concept ;
+    rdfs:label "France" ;
+    skos:broader kb:european .
+
+kb:french a skos:Concept ;
+    rdfs:label "French" ;
+    skos:broader kb:european .
+
+kb:fulani a skos:Concept ;
+    rdfs:label "Fulani" ;
+    skos:broader kb:african .
+
+kb:gaelic a skos:Concept ;
+    rdfs:label "Gaelic" ;
+    skos:broader kb:european .
+
+kb:gallic a skos:Concept ;
+    rdfs:label "Gallic" ;
+    skos:broader kb:european .
+
+kb:german a skos:Concept ;
+    rdfs:label "German" ;
+    skos:broader kb:european .
+
+kb:gospelOfBarnabas a skos:Concept ;
+    rdfs:label "Gospel of Barnabas" ;
+    skos:broader kb:christian .
+
+kb:greece a skos:Concept ;
+    rdfs:label "Greece" ;
+    skos:related kb:greek .
+
+kb:greekMythology a skos:Concept ;
+    rdfs:label "Greek mythology" ;
+    skos:broader kb:greek .
+
+kb:gurani a skos:Concept ;
+    rdfs:label "Gurani" ;
+    skos:broader kb:southAmerican .
+
+kb:haitian a skos:Concept ;
+    rdfs:label "Haitian" ;
+    skos:broader kb:american .
+
+kb:hawaiian a skos:Concept ;
+    rdfs:label "Hawaiian" ;
+    skos:broader kb:northAmerican .
+
+kb:heraldic a skos:Concept ;
+    rdfs:label "heraldic" .
+
+kb:heraldry a skos:Concept ;
+    rdfs:label "heraldry" .
+
+kb:hinduVedic a skos:Concept ;
+    rdfs:label "Hindu (Vedic)" ;
+    skos:broader kb:hindu .
+
+kb:hittite a skos:Concept ;
+    rdfs:label "Hittite" ;
+    skos:broader kb:asian .
+
+kb:hmong a skos:Concept ;
+    rdfs:label "Hmong" ;
+    skos:broader kb:chinese .
+
+kb:hopi a skos:Concept ;
+    rdfs:label "Hopi" ;
+    skos:broader kb:northAmerican .
+
+kb:hungarian a skos:Concept ;
+    rdfs:label "Hungarian" ;
+    skos:broader kb:european .
+
+kb:hyperborean a skos:Concept ;
+    rdfs:label "Hyperborean" ;
+    skos:broader kb:greek .
+
+kb:icelandic a skos:Concept ;
+    rdfs:label "Icelandic" ;
+    skos:broader kb:european .
+
+kb:immersionOrRitualImmersionBaptism a skos:Concept ;
+    rdfs:label "immersion, or ritual immersion (baptism)" ;
+    skos:broader kb:christian .
+
+kb:incan a skos:Concept ;
+    rdfs:label "Incan" ;
+    skos:broader kb:southAmericanIndian .
+
+kb:indonesian a skos:Concept ;
+    rdfs:label "Indonesian" ;
+    skos:broader kb:asian .
+
+kb:inuit a skos:Concept ;
+    rdfs:label "Inuit" ;
+    skos:broader kb:northAmerican .
+
+kb:iranian a skos:Concept ;
+    rdfs:label "Iranian" ;
+    skos:broader kb:asian .
+
+kb:irish a skos:Concept ;
+    rdfs:label "Irish" ;
+    skos:broader kb:european .
+
+kb:islamic a skos:Concept ;
+    rdfs:label "Islamic" ;
+    skos:narrower kb:islamicDervish .
+
+kb:islamicDervish a skos:Concept ;
+    rdfs:label "Islamic Dervish" ;
+    skos:broader kb:islamic .
+
+kb:italian a skos:Concept ;
+    rdfs:label "Italian" ;
+    skos:broader kb:european .
+
+kb:ivorian a skos:Concept ;
+    rdfs:label "Ivorian" ;
+    skos:broader kb:african .
+
+kb:javanese a skos:Concept ;
+    rdfs:label "Javanese" ;
+    skos:broader kb:asian .
+
+kb:jehovahSWitnesses a skos:Concept ;
+    rdfs:label "Jehovah’s Witnesses" ;
+    skos:broader kb:christian .
+
+kb:jewish a skos:Concept ;
+    rdfs:label "Jewish" ;
+    skos:narrower kb:essene .
+
+kb:kalmyk a skos:Concept ;
+    rdfs:label "Kalmyk" ;
+    skos:broader kb:asian .
+
+kb:kenyan a skos:Concept ;
+    rdfs:label "Kenyan" ;
+    skos:broader kb:african .
+
+kb:khoikhoi a skos:Concept ;
+    rdfs:label "Khoikhoi" ;
+    skos:broader kb:african .
+
+kb:khoisan a skos:Concept ;
+    rdfs:label "Khoisan" ;
+    skos:broader kb:african .
+
+kb:korean a skos:Concept ;
+    rdfs:label "Korean" ;
+    skos:broader kb:asian .
+
+kb:kwakiutl a skos:Concept ;
+    rdfs:label "Kwakiutl" ;
+    skos:broader kb:northAmerican .
+
+kb:laotian a skos:Concept ;
+    rdfs:label "Laotian" ;
+    skos:broader kb:asian .
+
+kb:latvian a skos:Concept ;
+    rdfs:label "Latvian" ;
+    skos:broader kb:european .
+
+kb:lithuanian a skos:Concept ;
+    rdfs:label "Lithuanian" ;
+    skos:broader kb:european .
+
+kb:macedonian a skos:Concept ;
+    rdfs:label "Macedonian" ;
+    skos:broader kb:european .
+
+kb:machican a skos:Concept ;
+    rdfs:label "Machican" ;
+    skos:broader kb:northAmerican .
+
+kb:makah a skos:Concept ;
+    rdfs:label "Makah" ;
+    skos:broader kb:northAmerican .
+
+kb:malian a skos:Concept ;
+    rdfs:label "Malian" ;
+    skos:broader kb:african .
+
+kb:mandan a skos:Concept ;
+    rdfs:label "Mandan" ;
+    skos:broader kb:northAmerican .
+
+kb:manipuri a skos:Concept ;
+    rdfs:label "Manipuri" ;
+    skos:broader kb:indic .
+
+kb:maori a skos:Concept ;
+    rdfs:label "Maori" ;
+    skos:broader kb:oceanic .
+
+kb:marriage a skos:Concept ;
+    rdfs:label "marriage" .
+
+kb:maya a skos:Concept ;
+    rdfs:label "Maya",
+        "maya" ;
+    skos:related kb:mayan .
+
+kb:medieval a skos:Concept ;
+    rdfs:label "medieval" ;
+    skos:related kb:middleAges .
+
+kb:melanesian a skos:Concept ;
+    rdfs:label "Melanesian" ;
+    skos:related kb:oceanic .
+
+kb:mexicanIndian a skos:Concept ;
+    rdfs:label "Mexican Indian" ;
+    skos:broader kb:northAmericanIndian .
+
+kb:middleAges a skos:Concept ;
+    rdfs:label "Middle Ages",
+        "middle ages" ;
+    skos:related kb:medieval .
+
+kb:middleEast a skos:Concept ;
+    rdfs:label "Middle East" ;
+    skos:narrower kb:turkish .
+
+kb:minoan a skos:Concept ;
+    rdfs:label "Minoan" ;
+    skos:broader kb:greek .
+
+kb:mochican a skos:Concept ;
+    rdfs:label "Mochican" ;
+    skos:broader kb:southAmerican .
+
+kb:mongolian a skos:Concept ;
+    rdfs:label "Mongolian" ;
+    skos:broader kb:asian .
+
+kb:montagnard a skos:Concept ;
+    rdfs:label "Montagnard" ;
+    skos:broader kb:asian .
+
+kb:nahua a skos:Concept ;
+    rdfs:label "Nahua" ;
+    skos:broader kb:northAmerican .
+
+kb:nahuan a skos:Concept ;
+    rdfs:label "Nahuan" ;
+    skos:broader kb:mexican .
+
+kb:navajo a skos:Concept ;
+    rdfs:label "Navajo" ;
+    skos:broader kb:northAmerican .
+
+kb:neoPlatonic a skos:Concept ;
+    rdfs:label "Neo-Platonic" ;
+    skos:broader kb:platonic .
+
+kb:neoPlatonism a skos:Concept ;
+    rdfs:label "Neo-Platonism" ;
+    skos:broader kb:platonism .
+
+kb:neopagan a skos:Concept ;
+    rdfs:label "Neopagan" ;
+    skos:broader kb:christian .
+
+kb:nepalese a skos:Concept ;
+    rdfs:label "Nepalese" ;
+    skos:broader kb:asian .
+
+kb:newCaledonian a skos:Concept ;
+    rdfs:label "New Caledonian" ;
+    skos:broader kb:oceanic .
+
+kb:newTestament a skos:Concept ;
+    rdfs:label "New Testament" ;
+    skos:broader kb:christian .
+
+kb:nootkan a skos:Concept ;
+    rdfs:label "Nootkan" ;
+    skos:broader kb:northAmerican .
+
+kb:norse a skos:Concept ;
+    rdfs:label "Norse" ;
+    skos:broader kb:scandinavian .
+
+kb:norwegian a skos:Concept ;
+    rdfs:label "Norwegian" ;
+    skos:broader kb:scandinavian .
+
+kb:oldTestament a skos:Concept ;
+    rdfs:label "Old Testament" ;
+    skos:broader kb:christian .
+
+kb:panche a skos:Concept ;
+    rdfs:label "Panche" ;
+    skos:broader kb:southAmerican .
+
+kb:parsi a skos:Concept ;
+    rdfs:label "Parsi" ;
+    skos:broader kb:asian .
+
+kb:pawnee a skos:Concept ;
+    rdfs:label "Pawnee" ;
+    skos:broader kb:northAmerican .
+
+kb:persian a skos:Concept ;
+    rdfs:label "Persian" ;
+    skos:broader kb:asian .
+
+kb:peruvianIndian a skos:Concept ;
+    rdfs:label "Peruvian Indian" ;
+    skos:broader kb:latinAmerican .
+
+kb:phrygian a skos:Concept ;
+    rdfs:label "Phrygian" ;
+    skos:related kb:greek .
+
+kb:platonic a skos:Concept ;
+    rdfs:label "Platonic" ;
+    skos:narrower kb:neoPlatonic .
+
+kb:polish a skos:Concept ;
+    rdfs:label "Polish" ;
+    skos:broader kb:european .
+
+kb:polynesian a skos:Concept ;
+    rdfs:label "Polynesian" ;
+    skos:broader kb:oceanic .
+
+kb:pueblo a skos:Concept ;
+    rdfs:label "Pueblo" ;
+    skos:broader kb:northAmerican .
+
+kb:pygmy a skos:Concept ;
+    rdfs:label "Pygmy" ;
+    skos:broader kb:african .
+
+kb:quechuan a skos:Concept ;
+    rdfs:label "Quechuan" ;
+    skos:broader kb:southAmericanIndian .
+
+kb:renaissanceArt a skos:Concept ;
+    rdfs:label "Renaissance art" ;
+    skos:broader kb:reinassance .
+
+kb:romanian a skos:Concept ;
+    rdfs:label "Romanian" ;
+    skos:broader kb:european .
+
+kb:rosicrucian a skos:Concept ;
+    rdfs:label "Rosicrucian" .
+
+kb:russian a skos:Concept ;
+    rdfs:label "Russian" ;
+    skos:narrower kb:siberian .
+
+kb:salteaux a skos:Concept ;
+    rdfs:label "Salteaux" ;
+    skos:broader kb:northAmerican .
+
+kb:samian a skos:Concept ;
+    rdfs:label "Samian" ;
+    skos:broader kb:european .
+
+kb:samoan a skos:Concept ;
+    rdfs:label "Samoan" ;
+    skos:broader kb:oceanic .
+
+kb:sanskrit a skos:Concept ;
+    rdfs:label "Sanskrit" ;
+    skos:related kb:indic .
+
+kb:scottish a skos:Concept ;
+    rdfs:label "Scottish" ;
+    skos:broader kb:european .
+
+kb:semang a skos:Concept ;
+    rdfs:label "Semang" ;
+    skos:broader kb:asian .
+
+kb:semitic a skos:Concept ;
+    rdfs:label "Semitic" ;
+    skos:narrower kb:sumeroSemitic .
+
+kb:serbian a skos:Concept ;
+    rdfs:label "Serbian" ;
+    skos:broader kb:european .
+
+kb:shinto a skos:Concept ;
+    rdfs:label "Shinto" ;
+    skos:related kb:japanese .
+
+kb:siberian a skos:Concept ;
+    rdfs:label "Siberian" ;
+    skos:broader kb:russian .
+
+kb:siouan a skos:Concept ;
+    rdfs:label "Siouan" ;
+    skos:broader kb:northAmerican .
+
+kb:southeastAsian a skos:Concept ;
+    rdfs:label "Southeast Asian" ;
+    skos:broader kb:asian .
+
+kb:southeasternAsian a skos:Concept ;
+    rdfs:label "Southeastern Asian" ;
+    skos:broader kb:asian .
+
+kb:spanish a skos:Concept ;
+    rdfs:label "Spanish" ;
+    skos:broader kb:european .
+
+kb:sriLankan a skos:Concept ;
+    rdfs:label "Sri Lankan" ;
+    skos:broader kb:asian .
+
+kb:sumeroAkkadian a skos:Concept ;
+    rdfs:label "Sumero-Akkadian" ;
+    skos:broader kb:sumerian .
+
+kb:susun a skos:Concept ;
+    rdfs:label "Susun" ;
+    skos:broader kb:tanzanian .
+
+kb:swiss a skos:Concept ;
+    rdfs:label "Swiss" ;
+    skos:broader kb:european .
+
+kb:syrian a skos:Concept ;
+    rdfs:label "Syrian" ;
+    skos:broader kb:asian .
+
+kb:tahitian a skos:Concept ;
+    rdfs:label "Tahitian" ;
+    skos:broader kb:oceanic .
+
+kb:teutonic a skos:Concept ;
+    rdfs:label "Teutonic" ;
+    skos:related kb:european .
+
+kb:tewa a skos:Concept ;
+    rdfs:label "Tewa" ;
+    skos:broader kb:northAmerican .
+
+kb:thai a skos:Concept ;
+    rdfs:label "Thai" ;
+    skos:broader kb:asian .
+
+kb:tlingit a skos:Concept ;
+    rdfs:label "Tlingit" ;
+    skos:broader kb:northAmerican .
+
+kb:toltec a skos:Concept ;
+    rdfs:label "Toltec" ;
+    skos:broader kb:northAmerican .
+
+kb:tuareg a skos:Concept ;
+    rdfs:label "Tuareg" ;
+    skos:broader kb:african .
+
+kb:tungun a skos:Concept ;
+    rdfs:label "Tungun" ;
+    skos:broader kb:indic .
+
+kb:tupiGuarani a skos:Concept ;
+    rdfs:label "Tupi-Guarani" ;
+    skos:broader kb:southAmerican .
+
+kb:tupinamba a skos:Concept ;
+    rdfs:label "Tupinamba" ;
+    skos:broader kb:southAmerican .
+
+kb:turkish a skos:Concept ;
+    rdfs:label "Turkish" ;
+    skos:broader kb:middleEast .
+
+kb:tutsi a skos:Concept ;
+    rdfs:label "Tutsi" ;
+    skos:broader kb:african .
+
+kb:urartian a skos:Concept ;
+    rdfs:label "Urartian" ;
+    skos:broader kb:eurasian .
+
+kb:vietnamese a skos:Concept ;
+    rdfs:label "Vietnamese" ;
+    skos:broader kb:asian .
+
+kb:westAfrican a skos:Concept ;
+    rdfs:label "West African" ;
+    skos:broader kb:african .
+
+kb:yoruban a skos:Concept ;
+    rdfs:label "Yoruban" ;
+    skos:broader kb:african .
+
+kb:zairean a skos:Concept ;
+    rdfs:label "Zairean" ;
+    skos:broader kb:african .
+
+kb:zodiac a skos:Concept ;
+    rdfs:label "zodiac" ;
+    skos:broader kb:astrological .
+
+kb:zoroastrian a skos:Concept ;
+    rdfs:label "Zoroastrian" ;
+    skos:narrower kb:zoroastrianism .
+
+kb:zoroastrianism a skos:Concept ;
+    rdfs:label "Zoroastrianism" ;
+    skos:broader kb:zoroastrian .
+
+kb:zulu a skos:Concept ;
+    rdfs:label "Zulu" ;
+    skos:broader kb:african .
+
+kb:zuni a skos:Concept ;
+    rdfs:label "Zuni" ;
+    skos:broader kb:northAmerican .
+
+kb:ainu a skos:Concept ;
+    rdfs:label "Ainu" ;
+    skos:broader kb:asian,
+        kb:japanese .
+
+kb:byzantine a skos:Concept ;
+    rdfs:label "Byzantine" ;
+    skos:broader kb:greek,
+        kb:roman .
+
+kb:christianArt a skos:Concept ;
+    rdfs:label "Christian art" ;
+    skos:broader kb:christian .
+
+kb:christianScience a skos:Concept ;
+    rdfs:label "Christian Science" ;
+    skos:broader kb:christian .
+
+kb:frisian a skos:Concept ;
+    rdfs:label "Frisian" ;
+    skos:broader kb:european,
+        kb:germanic .
+
+kb:germanic a skos:Concept ;
+    rdfs:label "Germanic" ;
+    skos:broader kb:european ;
+    skos:narrower kb:frisian .
+
+kb:grecoRoman a skos:Concept ;
+    rdfs:label "Greco-Roman" ;
+    skos:related kb:greek,
+        kb:roman .
+
+kb:hindu a skos:Concept ;
+    rdfs:label "Hindu",
+        "hindu" ;
+    skos:broader kb:asian ;
+    skos:narrower kb:hinduVedic .
+
+kb:latinAmerican a skos:Concept ;
+    rdfs:label "Latin American" ;
+    skos:narrower kb:peruvianIndian ;
+    skos:related kb:american .
+
+kb:mayan a skos:Concept ;
+    rdfs:label "Mayan" ;
+    skos:related kb:maya,
+        kb:southAmericanIndian .
+
+kb:philippine a skos:Concept ;
+    rdfs:label "Philippine",
+        "philippine" ;
+    skos:broader kb:asian ;
+    skos:narrower kb:tinguinian .
+
+kb:roman a skos:Concept ;
+    rdfs:label "Roman" ;
+    skos:narrower kb:byzantine ;
+    skos:related kb:grecoRoman .
+
+kb:sumerian a skos:Concept ;
+    rdfs:label "Sumerian" ;
+    skos:narrower kb:sumeroAkkadian,
+        kb:sumeroSemitic .
+
+kb:sumeroSemitic a skos:Concept ;
+    rdfs:label "Sumero-Semitic" ;
+    skos:broader kb:semitic,
+        kb:sumerian .
+
+kb:tibetan a skos:Concept ;
+    rdfs:label "Tibetan" ;
+    skos:broader kb:asian,
+        kb:chinese .
+
+kb:tinguinian a skos:Concept ;
+    rdfs:label "Tinguinian" ;
+    skos:broader kb:asian,
+        kb:philippine .
+
+kb:chinese a skos:Concept ;
+    rdfs:label "Chinese" ;
+    skos:broader kb:asian ;
+    skos:narrower kb:hmong,
+        kb:tibetan .
+
+kb:eurasian skos:narrower kb:akkadian,
+        kb:ammonite,
+        kb:canaanite,
+        kb:urartian .
+
+kb:japanese a skos:Concept ;
+    rdfs:label "Japanese" ;
+    skos:broader kb:asian ;
+    skos:narrower kb:ainu ;
+    skos:related kb:shinto .
+
+kb:indic a skos:Concept ;
+    rdfs:label "Indic" ;
+    skos:broader kb:asian ;
+    skos:narrower kb:manipuri,
+        kb:tungun ;
+    skos:related kb:sanskrit .
+
+kb:northAmericanIndian a skos:Concept ;
+    rdfs:label "North American Indian" ;
+    skos:broader kb:northAmerican ;
+    skos:narrower kb:blackfoot,
+        kb:chickasaw,
+        kb:mexicanIndian .
+
+kb:american a skos:Concept ;
+    rdfs:label "American" ;
+    skos:narrower kb:amerindian,
+        kb:apache,
+        kb:cakchiquel,
+        kb:haitian ;
+    skos:related kb:latinAmerican .
+
+kb:english a skos:Concept ;
+    rdfs:label "English" ;
+    skos:broader kb:european ;
+    skos:narrower kb:angloSaxon,
+        kb:british,
+        kb:cornish ;
+    skos:related kb:englishMedieval .
+
+kb:scandinavian a skos:Concept ;
+    rdfs:label "Scandinavian" ;
+    skos:broader kb:european ;
+    skos:narrower kb:denmark,
+        kb:finnish,
+        kb:norse,
+        kb:norwegian .
+
+kb:southAmericanIndian a skos:Concept ;
+    rdfs:label "South American Indian" ;
+    skos:broader kb:southAmerican ;
+    skos:narrower kb:aymaran,
+        kb:incan,
+        kb:quechuan ;
+    skos:related kb:mayan .
+
+kb:southAmerican skos:narrower kb:baltic,
+        kb:gurani,
+        kb:mochican,
+        kb:panche,
+        kb:southAmericanIndian,
+        kb:tupiGuarani,
+        kb:tupinamba .
+
+kb:greek a skos:Concept ;
+    rdfs:label "Greek",
+        "greek" ;
+    skos:narrower kb:byzantine,
+        kb:greekMythology,
+        kb:hyperborean,
+        kb:minoan ;
+    skos:related kb:grecoRoman,
+        kb:greece,
+        kb:phrygian .
+
+kb:oceanic a skos:Concept ;
+    rdfs:label "Oceanic" ;
+    skos:narrower kb:australianAboriginal,
+        kb:maori,
+        kb:newCaledonian,
+        kb:polynesian,
+        kb:samoan,
+        kb:tahitian ;
+    skos:related kb:melanesian .
+
+kb:christian a skos:Concept ;
+    rdfs:label "Christian" ;
+    skos:narrower kb:anglican,
+        kb:anglicanism,
+        kb:biblical,
+        kb:catharistic,
+        kb:christianArt,
+        kb:christianScience,
+        kb:coptic,
+        kb:gospelOfBarnabas,
+        kb:immersionOrRitualImmersionBaptism,
+        kb:jehovahSWitnesses,
+        kb:neopagan,
+        kb:newTestament,
+        kb:oldTestament .
+
+kb:northAmerican skos:narrower kb:algonquin,
+        kb:aztecan,
+        kb:eskimo,
+        kb:hawaiian,
+        kb:hopi,
+        kb:inuit,
+        kb:kwakiutl,
+        kb:machican,
+        kb:makah,
+        kb:mandan,
+        kb:nahua,
+        kb:navajo,
+        kb:nootkan,
+        kb:northAmericanIndian,
+        kb:pawnee,
+        kb:pueblo,
+        kb:salteaux,
+        kb:siouan,
+        kb:tewa,
+        kb:tlingit,
+        kb:toltec,
+        kb:zuni .
+
+kb:african a skos:Concept ;
+    rdfs:label "African" ;
+    skos:narrower kb:alur,
+        kb:ashanti,
+        kb:bagandan,
+        kb:bantu,
+        kb:baul,
+        kb:berber,
+        kb:bushmen,
+        kb:centralAfrican,
+        kb:congolese,
+        kb:dahomean,
+        kb:dogon,
+        kb:egypt,
+        kb:egyptian,
+        kb:ethiopian,
+        kb:fulani,
+        kb:ivorian,
+        kb:kenyan,
+        kb:khoikhoi,
+        kb:khoisan,
+        kb:malian,
+        kb:pygmy,
+        kb:tuareg,
+        kb:tutsi,
+        kb:westAfrican,
+        kb:yoruban,
+        kb:zairean,
+        kb:zulu ;
+    skos:related kb:bambaran .
+
+kb:european a skos:Concept ;
+    rdfs:label "European" ;
+    skos:narrower kb:armenian,
+        kb:danish,
+        kb:english,
+        kb:estonian,
+        kb:europeanFolklore,
+        kb:europeanMedievalArt,
+        kb:france,
+        kb:french,
+        kb:frisian,
+        kb:gaelic,
+        kb:gallic,
+        kb:german,
+        kb:germanic,
+        kb:hungarian,
+        kb:icelandic,
+        kb:irish,
+        kb:italian,
+        kb:latvian,
+        kb:lithuanian,
+        kb:macedonian,
+        kb:polish,
+        kb:romanian,
+        kb:samian,
+        kb:scandinavian,
+        kb:scottish,
+        kb:serbian,
+        kb:spanish,
+        kb:swiss ;
+    skos:related kb:teutonic .
+
+kb:asian a skos:Concept ;
+    rdfs:label "Asian" ;
+    skos:narrower kb:afghani,
+        kb:ainu,
+        kb:anatolian,
+        kb:arabian,
+        kb:burmese,
+        kb:cambodian,
+        kb:chinese,
+        kb:formosan,
+        kb:hindu,
+        kb:hittite,
+        kb:indic,
+        kb:indonesian,
+        kb:iranian,
+        kb:japanese,
+        kb:javanese,
+        kb:kalmyk,
+        kb:korean,
+        kb:laotian,
+        kb:mongolian,
+        kb:montagnard,
+        kb:nepalese,
+        kb:parsi,
+        kb:persian,
+        kb:philippine,
+        kb:semang,
+        kb:southeastAsian,
+        kb:southeasternAsian,
+        kb:sriLankan,
+        kb:syrian,
+        kb:thai,
+        kb:tibetan,
+        kb:tinguinian,
+        kb:vietnamese .
+
